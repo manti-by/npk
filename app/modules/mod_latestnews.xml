@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Latest News</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Модуль показывает список последних опубликованных материалов. Объекты, которые показаны главной странице не включаются в этот список.</description>
+	<files>
+		<filename module="mod_latestnews">mod_latestnews.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS модуля" description="Суффикс для добавления к классу CSS модуля (table.moduletable), для индивидуальной настройки модуля." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="cache" type="radio" default="0" label="Разрешить кэш" description="Разрешить кэширование результатов работы для этого модуля">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="type" type="list" default="0" label="Режим модуля" description="Позволяет вам настроить режим выбора материалов для показа">
+			<option value="1">Только материалы</option>
+			<option value="2">Только статические материалы</option>
+			<option value="3">Все</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="show_front" type="radio" default="1" label="Объекты с главной страницы" description="Показать/Спрятать объекты, присутствующие на главной странице - работает тоьлко для обычного (не статического) контента.">
+			<option value="1">Показать</option>
+			<option value="0">Спрятать</option>
+		</param>
+		<param name="count" type="text" default="5" label="Количество" description="Количество объектов для показа (по умолчанию 5)" />
+		<param name="catid" type="text" default="" label="ID категории" description="Выбор категории или категорий для показа (при выборе больше, чем одна категория, разделите их запятыми , )." />
+		<param name="secid" type="text" default="" label="ID раздела" description="Выбор раздела или разделов для показа (при выборе больше, чем одного раздела, разделите их запятыми , )." />
+	</params>
+</mosinstall>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module">
+	<name>Component List</name>
+	<author>Joomla! Project</author>
+	<creationDate>Июль 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Модуль показывает список установленных компонентов</description>
+	<files>
+		<filename module="mod_components">mod_components.php</filename>
+	</files>
+	<params>
+		<param name="count" type="text" default="10" label="Компоненты" description="Количество компонентов для показа" />
+	</params>
+</mosinstall>

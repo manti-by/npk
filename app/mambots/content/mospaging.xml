@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall version="1.0.0" type="mambot" group="content">
+	<name>mospaging</name>
+	<author>Joomla! Project</author>
+	<creationDate>August 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Добавляет таблицу содержимого разбитого на страницы. Синтаксис: {mospagebreak} или {mospagebreak title=Заголовок страницы} или {mospagebreak heading=Первая страница} or {mospagebreak title=Заголовок страницы&heading=Первая страница} или {mospagebreak heading=Первая страница&title=Заголовок страницы}</description>
+	<files>
+		<filename mambot="mospaging">mospaging.php</filename>
+	</files>
+	<params>
+		<param name="title" type="radio" default="1" label="Заголовок сайта" description="Титл и заголовок из мамбота вставляются в Титл сайта">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+	</params>
+</mosinstall>

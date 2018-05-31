@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Contact Items</name>
+	<author>Joomla! Project</author>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Параметры для отдельного Контакта</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Иконка меню" description="Маленькая иконка для размещения слева или справа от пункта меню, файл должен быть в images/stories/" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Суффикс класса CSS" description="Суффикс, прибавляемый к имени класса CSS страницы для индивидуальной настроки" />
+		<param name="print" type="list" default="" label="Иконка печати" description="Спратать/Показать иконку печати - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="back_button" type="list" default="" label="Кнопка -Назад-" description="Спрятать/Показать кнопку -Назад-, которая возвращает на предыдущую страницу">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="name" type="radio" default="1" label="Имя" description="Показать/Спрятать Имя">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="position" type="radio" default="1" label="Должность" description="Показать/Спрятать Должность">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="email" type="radio" default="0" label="Email" description="Показать/Спрятать E-mail, если установлено Показать, адрес будет защищен от спамроботов Java скриптом">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="street_address" type="radio" default="1" label="Улица" description="Показать/Спрятать Улицу">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="suburb" type="radio" default="1" label="Город" description="Показать/Спрятать Город">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="state" type="radio" default="1" label="Штат" description="Показать/Спрятать Штат">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="country" type="radio" default="1" label="Страна" description="Показать/Спрятать Страну">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="postcode" type="radio" default="1" label="Индекс" description="Показать/Спрятать Индекс">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="telephone" type="radio" default="1" label="Телефон" description="Показать/Спрятать Телефон">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="fax" type="radio" default="1" label="Факс" description="Показать/Спрятать Факс">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="misc" type="radio" default="1" label="Подробная информация" description="Показать/Спрятать подробную информацию">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="image" type="radio" default="1" label="Картинка" description="Показать/Спрятать картинку">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+    <param name="vcard" type="radio" default="1" label="VCard" description="Показать/Спрятать загрузку VCard">
+           <option value="0">Спрятать</option>
+           <option value="1">Показать</option>
+    </param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="email_description" type="radio" default="1" label="Описание Email" description="Показать/Спрятать текст, введенный ниже">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="email_description_text" type="text" size="30" default="" label="Текст описания" description="Текст описания для формы E-mail, если оставить пустым, отобразится _EMAIL_DESCRIPTION из языкового файла" />
+		<param name="email_form" type="radio" default="1" label="Форма Email" description="Спрятать/Показать форму отправки E-mail">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="email_copy" type="radio" default="1" label="Копия Email" description="Спрятать/Показать чекбокс отправки копии письма самому себе">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="drop_down" type="radio" default="0" label="Выпадающий список" description="Спрятать/Показать раскрывающийся список контактов для Копии письма">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="contact_icons" type="list" default="0" label="Иконка/Текст" description="Использовать Иконки, Текст или Ничего, когда показывается контактная информация">
+			<option value="0">Иконка</option>
+			<option value="1">Текст</option>
+			<option value="2">Ничего</option>
+		</param>
+		<param name="icon_address" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Иконка Адреса" description="Иконка для отображения Адреса" />
+		<param name="icon_email" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Иконка Email" description="Иконка для отображения E-mail" />
+		<param name="icon_telephone" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Иконка Телефона" description="Иконка дя отображения Телефона" />
+		<param name="icon_fax" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Иконка Факса" description="Иконка дя отображения Факса" />
+		<param name="icon_misc" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Иконка Описания" description="Иконка дя отображения Описания" />
+	</params>
+</mosinstall>

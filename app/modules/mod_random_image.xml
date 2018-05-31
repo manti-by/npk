@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Random Image</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Модуль показывает случайную картинку из подкаталога</description>
+	<files>
+	<filename module="mod_random_image">mod_random_image.php</filename>
+	</files>
+	<params>
+		<param name="type" type="text" default="jpg" label="Тип картинки" description="Тип картинки PNG/GIF/JPG (по умолчанию JPG)" />
+		<param name="folder" type="text" default="" label="Каталог картинок" description="путь к папке картинок относительно URL сайта, например: images/stories" />
+		<param name="link" type="text" default="" label="Ссылка" description="URL для перенаправления, если произошел щелчек по картинке, например: http://www.idi_na_fig.ru" />
+		<param name="width" type="text" default="" label="Ширина (px)" description="Ширина картинки (все картинки будут приведены к этой ширине)" />
+		<param name="height" type="text" default="" label="Высота (px)" description="Высота картинки (все картинки будут приведены к этой высоте)" />
+		<param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS модуля" description="Суффикс для добавления к классу CSS модуля (table.moduletable), для индивидуальной настройки модуля." />
+	</params>
+</mosinstall>

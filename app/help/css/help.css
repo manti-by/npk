@@ -1,0 +1,25 @@
+body {
+	font-family: verdana, arial, sans-serif;
+	font-size: 9pt;
+}
+
+h1 { 
+	color: #F77508;
+	font-size: 1.5em;
+    border-left: 25px solid #F77508;
+	border-bottom: 1px solid #F77508;
+	padding: 0 0 2px 5px;
+}
+
+h2 { 
+	color: #F77508;    
+	font-size: 1.3em;
+	margin: 1ex 0; 
+}
+
+pre {
+	text-align: left;
+	background-color: #fff;
+	border-left: 1px solid #F77508;
+	padding: 5px;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Custom Module</name>
+	<author>Joomla! Project</author>
+	<creationDate>Июль 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Пользовательский модуль</description>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS модуля" description="Суффикс для добавления к классу CSS модуля (table.moduletable), для индивидуальной настройки модуля." />
+		<param name="cache" type="radio" default="0" label="Кешировать данные модуля" description="Кешируются ли результаты работы модуля">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />		
+		<param name="firebots" type="radio" default="1" label="Мамботы" description="Разрешить ли Мамботам доступ к этому модулю">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />		
+		<param name="rssurl" type="text" size="50" default="" label="URL RSS-ленты " description="Введите URL URL RSS-ленты модуля" />
+		<param name="rsstitle" type="radio" default="1" label="Заголовок RSS" description="Показывать заголовок RSS">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="rssdesc" type="radio" default="1" label="Описание канала" description="Показывать текст описания RSS-канала">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="rssimage" type="radio" default="1" label="Иконка RSS-канала" description="Показывать иконку RSS-канала">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="rssitems" type="text" default="3" label="# новостей" description="Количество новостей RSS для показа" />
+		<param name="rssitemdesc" type="radio" default="1" label="Вводная часть" description="Показывать текст вводной части каждой новости">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="word_count" type="text" size="6" default="0" label="Количество слов" description="Ограничить количество слов во вводной части. 0 если не надо ограничивать" />
+		<param name="rsscache" type="text" size="6" default="3600" label="Время кэша RSS" description="Время кеширования для этой RSS-ленты" />
+	</params>
+</mosinstall>

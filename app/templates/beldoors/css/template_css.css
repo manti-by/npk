@@ -1,0 +1,709 @@
+/**
+author: marco_manti http://crysis.spb.su
+template: crs_pretty_wood
+**/
+
+
+/**#################### DEFAULT and FORMS CSS ####################**/
+
+body,html {
+  padding          : 0;
+  margin           : 0;
+  background       : white;
+}
+td, tr, p, div {
+  font-family      : Tahoma, Verdana, sans-serif, Helvetica, Arial;
+  font-size        : 14px;
+  color            : black;
+  line-height      : 18px;
+}
+form {
+	margin           : 0; 
+	padding          : 0;
+}
+hr {
+  color            : yellow;
+  height           : 1px;
+  width            : 100%;
+  font-weight      : bold;
+}
+ul {
+  margin           : 2px;
+  padding-left     : 10px;
+  list-style       : none;
+}
+ul li {
+  font-size        : 14px;
+  line-height      : 16px;
+  padding-left     : 10px;
+  padding-top      : 3px;
+  background       : url(../images/li_bullet.png) no-repeat top left;
+}
+ol {
+  margin           : 2px;
+  padding-left     : 10px;
+}
+ol li {
+  font-size        : 14px;
+  line-height      : 16px;
+  padding-left     : 10px;
+  padding-top      : 3px;
+}
+
+a:link {
+  color            : #b40202;
+  text-decoration  : none;
+  font-weight      : 700;
+}
+a:visited {
+  color            : #b40202;
+  text-decoration  : none;
+  font-weight      : 700;
+}
+a:hover {
+  color            : black;
+  text-decoration  : none;
+  font-weight      : 700;
+}
+	
+.inputbox {
+ color        : #000000;
+ background   : #ffffff;
+ border       : 1px solid #CCC;
+ margin       : 3px 0;
+ vertical-align:middle;
+}
+.reklama {
+  position         : fixed;
+  margin-top       : 310px;
+  width            : 20px;
+  height           : 150px;
+  background       : url(../images/reklama.png) no-repeat top left;
+}
+
+/**#################### Joomla CSS ####################**/
+
+
+/** Buttons **/
+
+.back_button {
+  color            : #178dcf;
+  font-size        : 11px;
+  font-weight      : normal;
+  padding-bottom   : 3px;
+  margin-right     : 4px;
+  float            : right;
+  line-height      : 20px;
+  text-decoration  : underline;
+}
+.button {
+  font-size        : 11px;
+  color            : #670000;
+  border           : 1px solid #cccccc;
+  margin           : 3px 0;
+  background-color : #f0f0f0;
+  padding          : 2px !important;
+  padding          : 1px;
+  cursor           : pointer;
+}
+
+/** Contact **/
+
+.contact_email  {
+  width            : 100%;
+}
+.contact_email .inputbox {
+  width            : 345px;
+}
+
+/** Module table  **/
+
+table.moduletable {
+  width            : 100%;
+  margin           : 0 0 20px 5px;
+  padding          : 0 0 10px 0;
+  border-bottom    : 1px solid #CCC;
+}
+table.moduletable th {
+  font-family      : Tahoma, Arial, Verdana, Helvetica, sans-serif;
+  color            : #999;
+  border-bottom    : 1px solid #CCC;	
+  width            : 100%;
+  font-size        : 16px;
+  font-weight      : bold;
+  line-height      : 20px;
+  text-transform   : uppercase;
+  text-align       : left;
+  text-indent      : 0;
+  padding-bottom   : 2px;
+}
+
+
+/** Read more **/
+
+a.readon:link, a.readon:visited {
+  color            : #b40202;
+  font-family      : Tahoma, Arial, Verdana, Helvetica, sans-serif;
+  font-size        : 11px;
+  background       : url(../images/arrow.png) no-repeat;
+  white-space      : normal;
+  font-weight      : bold;
+  padding          : 1px 0 3px 14px;
+  float            : right;
+  line-height      : 13px;
+  text-decoration  : underline;
+}
+a.readon:hover {
+  color            : #ff9933;
+  font-family      : Arial, Tahoma, Verdana, Helvetica, sans-serif;
+  font-size        : 11px;
+  background       : url(../images/arrow.png) no-repeat;
+  white-space      : normal;
+  font-weight      : bold;
+  padding          : 1px 0 3px 14px;
+  line-height      : 13px;
+  text-decoration  : underline;
+}
+
+
+/** Pagenavigation **/
+
+.pagenavcounter {
+  font-size        : 11px;
+  color            : #ff9933;
+}
+.pagenavbar {
+  border-top       : 1px solid #999999;
+  padding          : 2px;
+}
+.pagenav {
+  font-weight      : bold;
+  }
+a.pagenav:link, a.pagenav:visited {
+  font-size        : 11px;
+  color            : #b40202;
+  text-decoration  : none;
+}
+a.pagenav:hover {
+  font-size        : 11px;
+  color            : #006600;
+  text-decoration  : none;
+}
+table.contenttoc {
+  border           : 1px solid #dcdcdc;
+  background       : #b0d8ff;
+  padding          : 5px;
+  margin-left      : 2px;
+  margin-bottom    : 2px;
+}
+
+
+/** Pathway **/
+
+td.pathway {
+  font-size        : 14px;
+  line-height      : 22px;
+  font-weight      : bold;
+  color            : #999;
+  background       : url(../images/blanc.gif)  no-repeat middle right;
+}
+a.pathway:link, a.pathway:visited {
+  font-size        : 14px;
+  line-height      : 22px;
+  font-weight      : bold;
+  color            : #b40202;
+}
+a.pathway:hover {
+  font-size        : 14px;
+  font-weight      : bold;
+  color            : #000000;
+}
+.sitemap {
+	width           : 680px;
+	vertical-align  : top;
+}
+a.readmore-link:link, a.readmore-link:visited {
+	font-weight: normal;
+}
+a.comment-link:link, a.comment-link:visited {
+	font-weight: bold;
+}
+
+/** Content **/
+
+.content{
+  vertical-align   : top;
+  width            : 680px !important;
+  padding          : 10px;
+  margin           : 0 0 0 50px;
+  border-top       : 1px solid #CCC;
+  border-right     : 1px solid #CCC;
+}
+.content-wrapper {
+  min-height       : 400px;
+  margin-bottom    : 50px;
+}
+table.contentpane {
+  width            : 680px;
+  border-spacing   : 0;
+  padding-left     : 5px;
+  padding-right    : 5px;
+  margin-bottom    : 5px;
+}
+
+table.contentpaneopen {
+  width            : 680px;
+  border-spacing   : 0;
+  padding-left     : 5px;
+  padding-right    : 5px;
+  border-bottom    : 1px dotted #AAA;
+}
+.contentheading,.componentheading {
+  font-size        : 18px !important;
+  width            : 100%;
+  font-weight      : bold;
+  line-height      : 22px;
+  text-align       : left;
+  text-indent      : 0;
+  color            : black;
+  padding          : 3px 0px;
+  margin           : 3px 0px;
+}
+.contentheading a, .contentheading a:link, .contentheading a:visited {
+  color            : black;
+}
+.contentheading a:hover {
+  color            : #b40202;
+}
+.contentdescription { 
+  width            : auto !important;
+  margin           : 0;
+  padding          : 0;
+  padding-top      : 5px;
+  text-align       : left;
+}
+.contentpagetitle {
+  min-width        : 400px !important; 
+  width            : auto !important;
+  margin           : 0;
+  padding          : 0;
+  padding-top      : 5px;
+  text-align       : left;	
+}
+.blog {
+  width            : 680px !important;
+}
+.blog_more {
+  margin           : 10px 0 7px 7px;
+}
+.buttonheading {
+  padding          : 0 2px;
+}
+
+.contentpane td {
+	padding         : 5px;
+}
+
+.rightmod {
+  width            : 100%;
+  font-size        : 12px;
+  padding          : 0 5px;
+  vertical-align   : top;
+}
+.content_vote {
+  font-size        : 10px;
+  height           : 22px;
+  padding          : 2px 0;
+}
+.content_rating {
+  font-size        : 10px;
+  color            : #b40202;
+}
+.small {
+  font-size        : 11px;
+}
+.smalldark {
+  font-size        : 11px;
+}
+.createdate, .modifydate {
+  line-height      : 17px;
+  font-size        : 12px;
+  text-align       : left;
+  padding-left     : 15px;
+  padding-top      : 3px;
+  vertical-align   : super;
+  background       : url(../images/calendar.png) no-repeat center left;
+
+}
+.datetop {
+  color            : #aaaaaa;
+  line-height      : 17px;
+  font-size        : 12px;
+  text-align       : left;
+  vertical-align   : super;
+  text-transform   : uppercase;
+  text-align       : center;
+  padding-left     : 15px;
+  background       : url(../images/calendar.png) no-repeat bottom left;
+}
+.currencytop {
+  color            : #aaaaaa;
+  line-height      : 17px;
+  font-size        : 12px;
+  text-align       : left;
+  vertical-align   : super;
+  padding-left     : 12px;
+  background       : url(../images/money.png) no-repeat bottom left;
+  margin-left      : 5px;
+}
+.meteotop {
+  color            : #aaaaaa;
+  line-height      : 17px;
+  font-size        : 12px;
+  text-align       : left;
+  vertical-align   : super;
+  padding-left     : 15px;
+  background       : url(../images/meteo.png) no-repeat bottom left;
+  margin-left      : 5px;
+}
+a.category:link, a.category:visited {
+  font-size        : 11px;
+  font-weight      : bold;
+}
+
+.sectiontableheader {
+  font-size        : 14px;
+  font-weight      : normal;
+  letter-spacing   : 1px;
+  padding          : 1px;
+  border-bottom    : 1px solid #CCC;
+  border-top       : 1px solid #CCC;
+}
+
+.sectiontableentry1 {
+  vertical-align   : top;
+  padding          : 3px;
+  line-height      : 15px;
+}
+.sectiontableentry2 {
+  vertical-align   : top;
+  padding          : 3px;
+  line-height      : 15px;
+  width            : 680px;
+}
+.sectiontableentry1 img{
+margin-right: 4px;
+}
+.sectiontableentry2 img{
+margin-right: 4px;
+}
+
+
+.mainbody {
+  vertical-align    : top;
+  min-height        : 900px;
+  background        : url(../images/wood.png) no-repeat bottom right;
+}
+
+.maintable {
+  vertical-align    : top;
+  width             : 900px;
+  text-align        : justify;
+  margin            : 10px 0px 0px 10px;
+}
+
+/** Polls **/
+.poll {
+  color             : #333333;
+  line-height       : 13px;
+  font-weight       : normal;
+  text-align        : left;
+}
+.pollstableborder{
+  border-color      : #999999;
+}
+
+
+/** "Tab" buttons for Joomla frontend **/
+.ontab {
+  border-left      : 1px solid #666666;
+  text-align       : center;
+  font-weight      : bold;
+  color            : #333333;
+  padding          : 5px;
+  cursor           : pointer;
+  line-height      : 30px;
+}
+.offtab {
+  border-left      : 1px solid #666666;
+  text-align       : center;
+  color            : #999999;
+  font-weight      : normal;
+  padding          : 5px;
+  cursor           : pointer;
+  line-height      : 30px;
+}
+.tabpadding {
+ border-left       : 1px solid #666666;
+}
+
+
+/** CSS for Mainmenu **/
+a.mainlevel  {
+  display          : block;
+  width            : auto;
+  font-size        : 14px;
+  background       : none;
+  margin           : 0 4px;
+  line-height      : 22px;
+  border-bottom    : 1px dotted #CCC;
+}
+a.mainlevel:link, a.mainlevel:visited {
+  display          : block;
+  font-weight      : normal;
+  color            : #b40202;
+  font-weight      : bold;
+}
+a.mainlevel:hover {
+  background       : #EEE; 
+}
+
+/** Sublevel for Mainmenu **/
+
+a.sublevel {
+  display          : block;
+  width            : auto;
+  font-size        : 13px;
+  background       : none;
+  margin           : 0 0 0 15px;
+  padding          : 0 0 0 10px;
+  line-height      : 22px;
+  border-bottom    : 1px dotted #CCC;
+  background       : url(../images/indent1.png) no-repeat top left; 
+}
+a.sublevel:link, a.sublevel:visited {
+  display          : block;
+  font-weight      : normal;
+  color            : #b40202;
+  font-weight      : bold;
+}
+a.sublevel:hover {
+  background       : #EEE; 
+}
+
+
+/** Topmenu styles for BOTTOM navigation **/
+#mainlevel-nav {
+  font-size        : 11px;
+  list-style       : none;
+  padding          : 0;
+  margin           : 0;
+   
+}
+#mainlevel-nav li {
+  float            : left;
+  display          : block;
+  list-style       : none;
+  background-image : none;
+  padding-left     : 0;
+  padding-right    : 4px;
+  margin           : 0;
+  width            : auto !important;
+  font-size        : 11px;
+  line-height      : 28px;
+  white-space      : nowrap;
+}
+#mainlevel-nav li a {
+  padding-left     : 0;
+  padding-right    : 10px;
+  font-size        : 11px;
+  color            : #666666;
+  text-decoration  : underline;
+}
+#mainlevel-nav li a:hover {
+  font-size        : 11px;
+  color            : #999999;
+}
+
+
+
+/** images **/
+
+.mosimage {
+  border     : 1px solid #CCC;
+  margin     : 5px;
+  padding    :  3px;
+
+}
+.mosimage_caption {
+  margin-top: 3px;
+  padding   :  2px;
+  color     : #666666;
+  font-size : 10px;
+  background: #f1f1f1;
+}
+
+
+
+/** #################### index.php #################### **/
+
+.main { 
+  float            : left; 
+  width            : 100%;
+  margin           : 0; 
+  padding          : 0;
+}
+
+.topsearch {
+  padding-right    : 27px;
+  background       : url(../icons/search.png) no-repeat center right;
+}
+td.bgline {
+  margin : 0;
+  padding:  0;
+  width  : 7px;
+ }
+td.top_bar {
+  margin           : 0;
+  padding          : 0;
+  height           : 49px; 
+  padding-right    : 30px;  
+}
+td.pw{
+  margin           : 0;
+  padding          : 0;
+  height           : 28px;
+  padding          : 3px 0;
+  text-align       : left;
+}
+
+.footer {
+  padding          : 15px;
+  background       : url(../images/foot.png) repeat-x top left;
+  line-height      : 17px;
+  font-size        : 12px;
+  color            : white;
+  vertical-align   : top;
+}
+.footer a:link, .footer a:visited {
+  color            : white;
+  font-size        : 12px;
+  text-decoration  : none;
+  font-weight      : bold;
+  line-height      : 17px;
+}
+.footer a:hover {
+  color            : #AAAs;
+  font-size        : 12px;
+  color            : white;
+  text-decoration  : none;
+  font-weight      : bold;
+}
+.banner {
+	padding          : 10px 10px 10px 5px;
+}
+.banner a:link, .banner a:visited{
+	color            : #AAA;
+}
+
+.banner a:hover {
+	color            : #ff9933;
+}
+.banner li {
+   border-bottom    : 1px dotted #AAA;
+   margin-right     : 20px;
+   line-height      : 20px;
+}
+td.search{
+  padding-right  : 20px;
+  height         : 45px;
+ }
+td.logo {
+  padding-left     : 20px;
+  background       : url(../images/logo.png) no-repeat center left;
+  width            : 500px;
+  height           : 45px;
+}
+
+
+
+/******************* Top Menu************************/
+
+h2.menutitle, div.sitemap {
+  font-size          : 16px;
+  font-weight        : bold;
+}
+.moduletable-topnav {
+    float            : left;
+    width				: auto;
+    padding				: 0px 0px 1px 5px;
+}
+
+.moduletable-topnav td {
+    width				: auto;
+}
+
+.topnav {
+	width				: 0px; 
+}
+
+.topmenu {
+  background-color : black;
+  height           : 40px;
+}
+.topimage {
+  background       : #FFF url(../images/top_image.png) repeat-x top center;
+}
+a.topnav {
+	position			 : static;
+	width				 : auto;
+ 	padding			 : 5px 10px 5px 10px;
+	color				 : black;
+	font-size       : 12px;
+   text-decoration : none;
+   text-transform  : uppercase;
+   text-align      : center;
+}
+a.topnav td {
+	position			 : static;
+	width				 : 100px;
+ 	padding			 : 5px 10px 5px 10px;
+	color				 : black;
+	background-color: #CCC;
+	font-size       : 12px;
+   text-decoration : none;
+   text-transform  : uppercase;
+   text-align      : center;
+}
+a.topnav:hover {
+ 	width				 : auto;
+	color				 : black;
+	background		 : #aaa;
+ 	padding			 : 5px 10px 5px 10px;
+ 	font-weight		 : normal;
+	text-decoration : none;
+	text-transform  : uppercase;
+	font-weight	    : bold;
+}
+
+a.topnav#current {
+	cursor			 : default;
+	position			 : relative;
+	width				 : auto;
+ 	padding			 : 5px 10px 5px 10px;
+	color				 : black;
+   text-decoration : none;
+   text-transform  : uppercase;
+	font-weight	    : bold;
+}
+ 
+a.topnav#current:hover {
+	cursor			 : pointer;
+	position			 : relative;
+	width				 : auto;
+ 	padding			 : 5px 10px 5px 10px;
+	color				 : black;
+   text-decoration : none;
+   text-transform  : uppercase;
+	font-weight		 : bold;
+}

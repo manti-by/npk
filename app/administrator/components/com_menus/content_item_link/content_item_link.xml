@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Ссылка - материал</name>
+	<group>Content|Link</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.9</version>
+	<description>Создает ссылку на опубликованный материал</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Иконка меню" description="Маленькая иконка для размещения слева или справа от пункта меню, файл должен быть в images/stories/" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="unique_itemid" type="radio" default="0" label="Уникальный ID" description="Использовать уникальный ID для идентификации">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+	</params>
+</mosinstall>

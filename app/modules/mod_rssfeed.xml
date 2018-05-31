@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Syndicate</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Модуль Syndicate служит для экспорта ваших материалов в формате RSS. Когда вы кликните по иконке RSS, вы будете перенаправлены на новую страницу, которая будет содержать экспортируемые новости в XML формате. Для доступа к RSS-ленте (Newsfeed) на другом сайте с Мамбо или в программе чтения RSS-новостей, скопируйте и URL из адресной строки броузера.</description>
+	<files>
+		<filename module="mod_rssfeed">mod_rssfeed.php</filename>
+	</files>
+	<params>
+		<param name="text" type="text" default="" label="Текст" description="Введите текст, который будет отображен вместе с RSS-лентой" />
+		<param name="cache" type="radio" default="0" label="Разрешить кэш" description="Разрешает кэширование контента для этого модуля">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS модуля" description="Суффикс для добавления к классу CSS модуля (table.moduletable), для индивидуальной настройки модуля." />
+		<param name="rss091" type="radio" default="1" label="RSS 0.91" description="Показать/Спрятать RSS 0.91 ссылку">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="rss10" type="radio" default="1" label="RSS 1.0" description="Показать/Спрятать RSS 1.0 ссылку">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="rss20" type="radio" default="1" label="RSS 2.0" description="Показать/Спрятать RSS 2.0 ссылку">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="atom" type="radio" default="1" label="Atom" description="Показать/Спрятать Atom 0.3 ссылку">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="opml" type="radio" default="1" label="OPML" description="Показать/Спрятать OPML ссылку">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="rss091_image" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Иконка RSS 0.91" description="Выберите картинку для использования" />
+		<param name="rss10_image" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Иконка RSS 1.0" description="Выберите картинку для использования" />
+		<param name="rss20_image" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Иконка RSS 2.0" description="Выберите картинку для использования" />
+		<param name="atom_image" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Иконка Atom" description="Выберите картинку для использования" />
+		<param name="opml_image" type="imagelist" directory="/images/M_images" hide_none="1" default="" label="Иконка OPML" description="Выберите картинку для использования" />
+	</params>
+</mosinstall>

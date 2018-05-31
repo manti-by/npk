@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Main Menu</name>
+	<author>Joomla! Проект</author>
+	<creationDate>Июнь 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Отображает главное меню</description>
+	<files>
+		<filename module="mod_mainmenu">mod_mainmenu.php</filename>
+	</files>
+		<params>
+		<param name="class_sfx" type="text" default="" label="Суффикс класса CSS меню" description="Суффикс, который будет добавлен в CSS класса, для индивидуальной настройки меню" />
+		<param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS модуля" description="Суффикс для добавления к классу CSS модуля (table.moduletable), для индивидуальной настройки модуля." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="menutype" type="mos_menu" default="" label="Имя меню" description="Имя меню (по умолчанию -mainmenu-)" />
+		<param name="menu_style" type="list" default="vert_indent" label="Стиль меню" description="Стиль меню">
+			<option value="vert_indent">Вертикальный</option>
+			<option value="horiz_flat">Горизонтальный</option>
+			<option value="list_flat">Плоский список</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="full_active_id" type="radio" default="0" label="Полная активная подсветка" description="Разрешить полную активную подсветку меню, включая `Ссылка - Компонент` и `Ссылка - URL`, которые не вполне совместимы c XHTML, если более, чем одна активны">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="cache" type="radio" default="0" label="Разрешить кэш" description="Разрешить кэширование содержимого этого модуля">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="menu_images" type="radio" default="0" label="Показывать иконки меню" description="Показывать иконки меню">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="menu_images_align" type="radio" default="0" label="Выравнивание иконок меню" description="Выравнивание иконок меню">
+			<option value="0">Left</option>
+			<option value="1">Right</option>
+		</param>
+		<param name="expand_menu" type="radio" default="0" label="Развернуть меню" description="Развернуть меню и сделать его подменю видимыми">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="activate_parent" type="radio" default="0" label="Активация родителя" description="Установить ID активации для всех родительских меню в дереве">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="indent_image" type="list" default="0" label="Взять картинки" description="Выбрать, откуда будут браться картинки для меню">
+			<option value="0">Шаблон</option>
+			<option value="1">Joomla картинки по умолчанию</option>
+			<option value="2">Использовать эти картинки</option>
+			<option value="3">Нет</option>
+		</param>
+		<param name="indent_image1" type="imagelist" directory="/images/M_images" default="" label="Картинка 1" description="Картинка для 1 подуровня" />
+		<param name="indent_image2" type="imagelist" directory="/images/M_images" default="" label="Картинка 2" description="Картинка для 2 подуровня" />
+		<param name="indent_image3" type="imagelist" directory="/images/M_images" default="" label="Картинка 3" description="Картинка для 3 подуровня" />
+		<param name="indent_image4" type="imagelist" directory="/images/M_images" default="" label="Картинка 4" description="Картинка для 4 подуровня" />
+		<param name="indent_image5" type="imagelist" directory="/images/M_images" default="" label="Картинка 5" description="Картинка для 5 подуровня" />
+		<param name="indent_image6" type="imagelist" directory="/images/M_images" default="" label="Картинка 6" description="Картинка для 6 подуровня" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="spacer" type="text" default="" size="5" label="Разделитель" description="Разделитель для горизонтального меню" />
+		<param name="end_spacer" type="text" default="" size="5" label="Конец разделителя" description="Конец разделителя для горизонтального меню" />
+	</params>
+</mosinstall>

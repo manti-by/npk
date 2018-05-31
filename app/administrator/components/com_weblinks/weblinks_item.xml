@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Weblinks</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Компонент показывает список ссылок</description>
+	<params>
+		<param name="target" type="list" default="0" label="Назначение" description="Окно, в котором показывается ссылка при щелчке на ссылке">
+			<option value="0">То же окно с кнопками навигации</option>
+			<option value="1">Новое окно с кнопками навигации</option>
+			<option value="2">Новое окно без кнопкок навигации</option>
+		</param>
+	</params>
+</mosinstall>

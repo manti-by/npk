@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Related Items</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Этот модуль отображает другое содержимое которое связано с показываемым в настоящее время.
+  Базируется ка ключевых словах из METADATA. Все ключевые слова текущего материала ищутся снова в ключевых словах всех опубликованных материалов.
+  Например, вы имеете материал 'Зеленые попугаи' и 'Оранжевые бегемоты'. Если вы включите ключевое слово в METADATA 'Африка' в оба материала,
+  то модуль покажет 'Зеленые попугаи' про просмотре 'Оранжевые бегемоты' и наоборот".</description>
+	<files>
+	<filename module="mod_related_items">mod_related_items.php</filename>
+	</files>
+	<params>
+		<param name="cache" type="radio" default="0" label="Разрешить кэш" description="Разрешить ли кеширование">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS" description="Суффикс для добавления к классу CSS модуля (table.moduletable), для индивидуальной настройки модуля." />
+	</params>
+</mosinstall>

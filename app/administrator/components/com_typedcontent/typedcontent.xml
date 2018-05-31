@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Typed Content Page</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Показ отдельной страницы материалов</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Иконка меню" description="Маленькая иконка для размещения слева или справа от пункта меню, файл должен быть в images/stories/" />
+		<param name="item_title" type="radio" default="1" label="Текст заголовка страницы" description="Спрятать/Показать заголовок страницы">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Суффикс класса CSS" description="Суффикс, прибавляемый к имени класса CSS страницы для индивидуальной настроки" />
+		<param name="back_button" type="list" default="" label="Кнопка -Назад-" description="Спрятать/Показать кнопку -Назад-, которая возвращает на предыдущую страницу">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="rating" type="list" default="" label="Рейтинг объекта" description="Спрятать/Показать рейтинг объекта - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="author" type="list" default="" label="Имя автора" description="Спрятать/Показать имя автора - только для этой страницы - only affects this page">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="createdate" type="list" default="" label="Дата создания" description="Спратать/Показать дату создания материала - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="modifydate" type="list" default="" label="Дата изменения" description="Спратать/Показать дату изменения материала - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="pdf" type="list" default="" label="PDF иконка" description="Спратать/Показать иконку PDF - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="print" type="list" default="" label="Иконка печати" description="Спратать/Показать иконку печати - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="email" type="list" default="" label="Email иконка" description="Спратать/Показать иконку E-mail - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+	</params>
+</mosinstall>

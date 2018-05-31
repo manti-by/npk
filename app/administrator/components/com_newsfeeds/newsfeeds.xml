@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Newsfeeds</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Компонент для управления RSS/RDF лентами</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Иконка меню" description="Маленькая иконка для размещения слева или справа от пункта меню, файл должен быть в images/stories/" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Суффикс класса CSS" description="Суффикс, прибавляемый к имени класса CSS страницы для индивидуальной настроки" />
+		<param name="back_button" type="list" default="" label="Кнопка -Назад-" description="Спрятать/Показать кнопку -Назад-, которая возвращает на предыдущую страницу">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Текст заголовка страницы" description="Спрятать/Показать заголовок страницы">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Текст заголовка страницы" description="Текст вверху страницы. Если оставить пустым, будет проставлено имя меню" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat_section" type="radio" default="1" label="Список категорий - Раздел" description="Показать/Спрятать список категорий в режиме списка">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat" type="radio" default="1" label="Список категорий - Категория" description="Спрятать/Показать список категорий в  режиме таблицы">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="cat_description" type="radio" default="1" label="Описание категории" description="Спрятать/Показать описания для списка других категорий">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="cat_items" type="radio" default="1" label="# объектов в категории" description="Спрятать/Показать количество объектов внутри категории">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="description" type="radio" default="1" label="Описание" description="Спрятать/Показать описание введенное ниже">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="description_text" type="textarea" default="" label="Текст описания" rows="5" cols="30" description="Описание для страницы"/>
+		<param name="image" type="imagelist" directory="/images/stories" hide_default="1" default="-1" label="Иконка" description="Иконка для страницы, должна быть в /images/stories folder. По умолчанию -  web_links.jpg, Нет - иконка не будет загружаться" />
+		<param name="image_align" type="radio" default="right" label="Выравнивание иконки" description="Выравнивание иконки">
+			<option value="left">Влево</option>
+			<option value="right">Вправо</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="headings" type="radio" default="1" label="Заголовки таблиц" description="Спрятать/Показать заголовки таблиц">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="name" type="radio" default="1" label="Колонка имени" description="Спрятать/Показать колонку имени">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="articles" type="radio" default="1" label="колонка # новостей" description="Спрятать/Показать # новостей в ленте">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="link" type="radio" default="1" label="Колонка ссылки" description="Спрятать/Показать колонку адреса ленты">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="feed_image" type="radio" default="1" label="Иконка RSS-канала" description="Показать/Спрятать иконку канала">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="feed_descr" type="radio" default="1" label="Описание канала" description="Показать/Спрятать описание канала">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="item_descr" type="radio" default="1" label="Вводная часть" description="Показать/Спрятать вводную часть новости">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="word_count" type="text" size="6" default="0" label="Количество слов" description="Ограничить количество слов во вводной части. 0 если не надо ограничивать" />
+	</params>
+</mosinstall>

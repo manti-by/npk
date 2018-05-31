@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component">
+	<name>true</name>
+	<creationDate>16.06.2008</creationDate>
+	<author>PaLyCH</author>
+	<copyright>Copyright2008 by PaLyCH. Validating and buging by PaLyCH. Distribution prohibited!</copyright>
+	<authorEmail>ya@palpalych.ru</authorEmail>
+	<authorUrl>http://true.palpalych.ru</authorUrl>
+	<version>2.0</version>
+	<description>True Gallery Multilingual is a native Joomla! gallery component</description>
+	<files>
+		<filename>true.php</filename>
+		<filename>sub_viewdetails.php</filename>
+		<filename>sub_votepic.php</filename>
+		<filename>sub_viewspecial.php</filename>
+		<filename>sub_wm.php</filename>
+		<filename>watermark.png</filename>
+		<filename>index.html</filename>
+		<filename>languages/russian.ini</filename>
+		<filename>languages/english.ini</filename>
+		<filename>languages/latvian.ini</filename>
+		<filename>languages/ukrainian.ini</filename>
+		<filename>languages/italian.ini</filename>
+		<filename>languages/index.html</filename>
+		<filename>js/sub_window.js</filename>
+		<filename>js/index.html</filename>
+		<filename>js/jfunctions.js</filename>
+		<filename>js/tgvote.js</filename>
+		<filename>js/vote.php</filename>
+		<filename>js/carusel/skin.css</filename>
+		<filename>js/carusel/prev-horizontal.png</filename>
+		<filename>js/carusel/next-horizontal.png</filename>
+		<filename>js/carusel/jquery.jcarousel.css</filename>
+		<filename>js/carusel/jquery.js</filename>
+		<filename>js/carusel/jcarousellite.js</filename>
+		<filename>js/highslide/highslide.css</filename>
+		<filename>js/highslide/highslide-full.js</filename>
+		<filename>js/highslide/graphics/zoomout.cur</filename>
+		<filename>js/highslide/graphics/zoomin.cur</filename>
+		<filename>js/highslide/graphics/resize.gif</filename>
+		<filename>js/highslide/graphics/loader.white.gif</filename>
+		<filename>js/highslide/graphics/loader.gif</filename>
+		<filename>js/highslide/graphics/geckodimmer.png</filename>
+		<filename>js/highslide/graphics/fullexpand.gif</filename>
+		<filename>js/highslide/graphics/controlbar4.gif</filename>
+		<filename>js/highslide/graphics/controlbar4-hover.gif</filename>
+		<filename>js/highslide/graphics/controlbar3.gif</filename>
+		<filename>js/highslide/graphics/controlbar2.gif</filename>
+		<filename>js/highslide/graphics/outlines/rounded-white.png</filename>
+		<filename>js/highslide/graphics/outlines/rounded-black.png</filename>
+		<filename>js/highslide/graphics/outlines/outer-glow.png</filename>
+		<filename>js/highslide/graphics/outlines/glossy-dark.png</filename>
+		<filename>js/highslide/graphics/outlines/drop-shadow.png</filename>
+		<filename>js/highslide/graphics/outlines/beveled.png</filename>
+		<filename>js/thickbox/thickbox.css</filename>
+		<filename>js/thickbox/thickbox-compressed.js</filename>
+		<filename>js/thickbox/loadingAnimation.gif</filename>
+		<filename>js/toggle/toggle.css</filename>
+		<filename>js/toggle/toggle_pack.js</filename>
+		<filename>libraries/index.html</filename>
+		<filename>libraries/joomlatune/legacy/index.html</filename>
+		<filename>libraries/joomlatune/localization/index.html</filename>
+		<filename>libraries/joomlatune/index.html</filename>
+		<filename>libraries/joomlatune/tree.php</filename>
+		<filename>true.legacy.php</filename>
+		<filename>libraries/joomlatune/legacy/connector.php</filename>
+		<filename>libraries/joomlatune/legacy/db.php</filename>
+		<filename>libraries/joomlatune/legacy/input.php</filename>
+		<filename>libraries/joomlatune/legacy/jsconnect.php</filename>
+		<filename>libraries/joomlatune/legacy/redirect.php</filename>
+		<filename>libraries/joomlatune/legacy/route.php</filename>
+		<filename>libraries/joomlatune/localization/language.php</filename>
+		<filename>libraries/joomlatune/localization/string.php</filename>
+		<filename>css/index.html</filename>
+		<filename>css/dg.css</filename>
+		<filename>images/about.png</filename>
+		<filename>images/blank.gif</filename>
+		<filename>images/back_img.png</filename>
+		<filename>images/blank.png</filename>
+		<filename>images/true.png</filename>
+		<filename>images/del.png</filename>
+		<filename>images/tgcategory.png</filename>
+		<filename>images/tgconfig.png</filename>
+		<filename>images/tgimport.png</filename>
+		<filename>images/tgpics.png</filename>
+		<filename>images/tgrebuild.png</filename>
+		<filename>images/tgreset.png</filename>
+		<filename>images/tgtime.png</filename>
+		<filename>images/tgupload.png</filename>
+		<filename>images/tgzipupload.png</filename>
+		<filename>images/download.png</filename>
+		<filename>images/edit.png</filename>
+		<filename>images/edit_trash.png</filename>
+		<filename>images/home.png</filename>
+		<filename>images/loading.gif</filename>
+		<filename>images/lock.png</filename>
+		<filename>images/lock_open.png</filename>
+		<filename>images/nav_next.gif</filename>
+		<filename>images/nav_prev.gif</filename>
+		<filename>images/new.gif</filename>
+		<filename>images/no_download.png</filename>
+		<filename>images/publish_x.png</filename>
+		<filename>images/star.gif</filename>
+		<filename>images/tick.png</filename>
+		<filename>images/index.html</filename>
+		<filename>tpl/category.php</filename>
+		<filename>tpl/viewdetails.php</filename>
+	</files>
+	<install>
+ 		<queries>
+   			<query>DROP TABLE IF EXISTS `#__true`</query>
+                       <query>
+                       				CREATE TABLE `#__true` (
+                                 `id` int(11) NOT NULL auto_increment,
+                                 `catid` int(11) NOT NULL default '0',
+                                 `imgtitle` text NOT NULL,
+                                 `imgauthor` varchar(50) default NULL,
+                                 `imgtext` text NOT NULL,
+                                 `imgdate` varchar(20) default NULL,
+                                 `imgvotes` int(11) NOT NULL default '0',
+                                 `imgvotesum` int(11) NOT NULL default '0',
+                                 `published` tinyint(1) NOT NULL default '0',
+                                 `ordering` int(11) NOT NULL default '0',
+                                 `imgoriginalname` varchar(50) NOT NULL default '',
+                                 `imgfilename` varchar(50) NOT NULL default '',
+                                 `imgthumbname` varchar(50) NOT NULL default '',
+                                 `checked_out` int(11) NOT NULL default '0',
+                                 `owner` int(11) NOT NULL default '62',
+                                 `approved` int(1) NOT NULL default '0',
+                                 `useruploaded` int(1) NOT NULL default '0',
+                                 `field1` varchar(250) NOT NULL,
+                                 `field2` varchar(250) NOT NULL,
+                                 `field3` varchar(250) NOT NULL,
+                                 `field4` varchar(250) NOT NULL,
+                                 `field5` varchar(250) NOT NULL,
+                                 `metadesc` varchar(250) NOT NULL,
+                                 `metakey` varchar(250) NOT NULL,
+                                 `tags` varchar(250) NOT NULL,
+                                 PRIMARY KEY  (`id`)
+                               ) TYPE=MyISAM;
+                       </query>
+                       <query>DROP TABLE IF EXISTS `#__true_catg`</query>
+                       <query>
+                               CREATE TABLE `#__true_catg` (
+                                 `cid` int(11) NOT NULL auto_increment,
+                                 `name` varchar(255) NOT NULL default '',
+                                 `parent` varchar(255) NOT NULL default '0',
+                                 `description` text,
+                                 `desc_full` text,
+                                 `ordering` int(11) NOT NULL default '0',
+                                 `access` tinyint(3) unsigned NOT NULL default '0',
+                                 `published` char(1) NOT NULL default '0',
+                                 `cmetadesc` varchar(250) NOT NULL,
+                                 `cmetakey` varchar(250) NOT NULL,
+                                 `menulink` char(1) NOT NULL default '0',
+                                 `menuselecttype` varchar(100) NOT NULL default '0',
+                                 `catimg` int(11),
+                                 `usercat` int(11),
+                                 PRIMARY KEY  (`cid`)
+                               ) TYPE=MyISAM;
+                       </query>
+                       <query>
+                               CREATE TABLE IF NOT EXISTS `#__true_config` (
+							  `ad_path` varchar(250) default 'trueimg',
+							  `ad_protect` int(1) NOT NULL default '0',
+							  `ad_orgresize` int(1) NOT NULL default '0',
+							  `ad_orgwidth` int(11) NOT NULL default '800',
+							  `ad_orgheight` int(11) NOT NULL default '600',
+							  `ad_thumbwidth` int(11) NOT NULL default '120',
+							  `ad_thumbheight` int(11) NOT NULL default '120',
+							  `ad_crsc` int(1) NOT NULL default '0',
+							  `ad_thumbquality` int(3) NOT NULL default '90',
+							  `ad_showdetail` int(1) NOT NULL default '1',
+							  `ad_showrating` int(1) NOT NULL default '1',
+							  `ad_showcomment` int(1) NOT NULL default '1',
+							  `ad_pathway` int(1) NOT NULL default '1',
+							  `ad_showpanel` int(1) NOT NULL default '1',
+							  `ad_userpannel` int(1) NOT NULL default '1',
+							  `ad_special` int(1) NOT NULL default '1',
+							  `ad_rating` int(1) NOT NULL default '1',
+							  `ad_lastadd` int(1) NOT NULL default '1',
+							  `ad_owners` int(1) NOT NULL default '1',
+							  `ad_lastcomment` int(1) NOT NULL default '1',
+							  `ad_showinformer` int(1) NOT NULL default '1',
+							  `ad_periods` int(11) NOT NULL default '604800',
+							  `ad_search` int(1) NOT NULL default '1',
+							  `ad_comtitle` int(1) NOT NULL default '1',
+							  `ad_showsend2friend` int(1) NOT NULL default '1',
+							  `ad_picincat` int(1) NOT NULL default '1',
+							  `ad_powered` int(1) NOT NULL default '1',
+							  `ad_showwatermark` int(1) NOT NULL default '0',
+							  `ad_showdownload` int(1) NOT NULL,
+							  `ad_downpub` int(1) NOT NULL,
+							  `ad_perpage` int(5) NOT NULL default '16',
+							  `ad_catsperpage` int(5) NOT NULL default '6',
+							  `ad_sortby` varchar(50) default 'ASC',
+							  `ad_toplist` int(11) NOT NULL default '20',
+							  `ad_approve` int(1) NOT NULL default '0',
+							  `ad_maxuserimage` int(11) NOT NULL default '200',
+							  `ad_maxfilesize` int(22) NOT NULL default '120000000',
+							  `ad_maxwidth` int(11) NOT NULL default '448',
+							  `ad_maxheight` int(11) NOT NULL default '332',
+							  `ad_category` int(1) NOT NULL,
+							  `ad_imgstyle` int(1) NOT NULL,
+							  `ad_ncsc` int(1) NOT NULL default '2',
+							  `ad_showimgtext` int(1) NOT NULL default '1',
+							  `ad_showfimgdate` int(1) NOT NULL default '1',
+							  `ad_showimgcounter` int(1) NOT NULL default '1',
+							  `ad_showfrating` int(1) NOT NULL default '1',
+							  `ad_showres` int(1) NOT NULL default '1',
+							  `ad_showfimgsize` int(1) NOT NULL default '1',
+							  `ad_showimgauthor` int(1) NOT NULL default '1',
+							  `ad_cp` int(1) NOT NULL default '4',
+							  `ad_lightbox` int(1) NOT NULL default '1',
+							  `ad_lightbox_fa` int(1) NOT NULL default '1',
+							  `ad_js_effect` int(1) NOT NULL default '2',
+							  `ad_cat_desc` int(1) NOT NULL default '1',
+							  `ad_field1` int(1) NOT NULL default '0',
+							  `ad_field2` int(1) NOT NULL default '0',
+							  `ad_field3` int(1) NOT NULL default '0',
+							  `ad_field4` int(1) NOT NULL default '0',
+							  `ad_field5` int(1) NOT NULL default '0',
+							  `ad_mini_to_js` int(1) NOT NULL default '0',
+							  `ad_status1` int(11) NOT NULL default '5',
+							  `ad_status2` int(11) NOT NULL default '15',
+							  `ad_status3` int(11) NOT NULL default '30',
+							  `ad_status4` int(11) NOT NULL default '50',
+							  `ad_status5` int(11) NOT NULL default '100',
+							  `ad_cat_img_detail` int(1) NOT NULL default '1',
+							  `ad_carusel` int(1) NOT NULL default '1',
+							  `ad_bbhtml` int(1) NOT NULL default '1',
+							  `ad_toggle` int(1) NOT NULL default '0',
+							  `ad_lang` varchar(250)
+							) TYPE=MyISAM;
+
+                       </query>
+                       <query>DROP TABLE IF EXISTS `#__true_votes`</query>
+                       <query>
+                               CREATE TABLE `#__true_votes` (
+                               `vpic` int(11) NOT NULL default '0',
+                               `vip` varchar(255) NOT NULL default '',
+                               `vote` int(11) NOT NULL default '0',
+                               `user` varchar(255) NOT NULL default '',
+                               `date` varchar(100) default NULL,
+                               UNIQUE INDEX (vpic,vip)
+                               ) TYPE=MyISAM;
+                       </query>
+                       <query>DROP TABLE IF EXISTS `#__true_count`</query>
+                       <query>
+                               CREATE TABLE `#__true_count` (
+							  `id` int(10) NOT NULL auto_increment,
+							  `imgid` int(10) NOT NULL,
+							  `count` int(10) NOT NULL default '0',
+							  PRIMARY KEY  (`id`)
+								) ENGINE=MyISAM  ;
+                       </query>
+               </queries>
+       </install>       <uninstall>
+               <queries>
+                       <query>DELETE FROM `#__true`</query>
+                       <query>DROP TABLE `#__true`</query>
+                       <query>DROP TABLE `#__true_catg`</query>
+                       <query>DROP TABLE `#__true_votes`</query>
+                       <query>DROP TABLE `#__true_count`</query>
+                       <query>DELETE FROM `#__menu` WHERE link='index.php?option=com_true';</query>
+               </queries>
+       </uninstall>
+	<installfile>install.true.php</installfile>
+	<uninstallfile>uninstall.true.php</uninstallfile>
+	<administration>
+		<menu>true</menu>
+		<submenu>
+			<menu act="pictures">Pictures</menu>
+			<menu act="showcatg">Categories</menu>
+			<menu act="upload">Normal Upload</menu>
+			<menu act="batchupload">Batch Upload</menu>
+			<menu act="batchimport">Batch Import</menu>
+			<menu act="settings">Configuration</menu>
+			<menu act="resetvotes">Reset Votes</menu>
+			<menu act="rebuild">Thumb Rebuild</menu>
+		</submenu>
+		<files>
+			<filename>admin.true.html.php</filename>
+			<filename>admin.true.php</filename>
+			<filename>class.true.php</filename>
+			<filename>config.true.php</filename>
+			<filename>globals.true.php</filename>
+			<filename>images.true.php</filename>
+			<filename>install.true.php</filename>
+			<filename>toolbar.true.html.php</filename>
+			<filename>toolbar.true.php</filename>
+			<filename>uninstall.true.php</filename>
+			<filename>true.utils.php</filename>
+			<filename>nav.php</filename>
+			<filename>true.xml</filename>
+		</files>
+		<images>
+			<filename>images/true.jpg</filename>
+			<filename>images/rebuild.png</filename>
+		</images>
+	</administration>
+</mosinstall>

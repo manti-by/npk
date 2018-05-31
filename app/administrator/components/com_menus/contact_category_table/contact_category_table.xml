@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Таблицы - категория контактов</name>
+	<group>Component</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Показывает таблицу контактов для указанной категории</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Меню Image" description="Маленькая картинка, расположенная слева или справа в меню от текста меню, картинка должна быть в images/stories/" />
+		<param name="pageclass_sfx" type="text" default="" label="Суффикс класса CSS" description="Суффикс, который будет добавлен в CSS класса, для индивидуальной настройки вида" />
+		<param name="back_button" type="list" default="" label="Кнопка НАЗАД" description="Показать/Спрятать кнопку НАЗАД, возвращающую на страницу НАЗАД">
+			<option value="">Использовать GLOBAL</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Заголовок таблицы" description="Спрятать/Показать заголовок таблицы">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Текст заголовка страницы" description="Текст для показа в начале страницы. Если оставить пустыммм, будет показано имя меню" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat" type="radio" default="1" label="Другие Категории" description="При просмотре Категории, Спрятать/Показать список других Категорий">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="cat_description" type="radio" default="0" label="Описание Категорий" description="Спрятать/Показать в списке описание других Категорий">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="cat_items" type="radio" default="1" label="# количество объектов" description="Спрятать/Показать количество объектов в каждой категории">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="headings" type="radio" default="1" label="Заголовки таблиц" description="Спрятать/Показать заголовки таблиц">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="position" type="radio" default="1" label="Колонка Должности" description="Спрятать/Показать колонку Должности">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="email" type="radio" default="0" label="Email" description="Спрятать/Показать Email">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="telephone" type="radio" default="1" label="Телефон" description="Спрятать/Показать телефон">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="fax" type="radio" default="1" label="Факс" description="Спрятать/Показать факс">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="bannedEmail" type="text" default="" label="Запрещения E-mail адресов" size="40" description="Письма, содержащие в адресе любые из введенных текстовых строк будут запрещены, слова разделяются точкой с запятой, например: дурак;козел;негодяй" />
+		<param name="bannedSubject" type="text" default="" label="Запрещения в поле `Тема` (Subject)" size="40" description="Темы (Subject), содержащие любые из введенных текстовых строк будут запрещены, слова разделяются точкой с запятой" />
+		<param name="bannedText" type="text" default="" label="Запрещения в тексте письма" size="40" description="Письма, содержащие в тексте письма любые из введенных текстовых строк будут запрещены, слова разделяются точкой с запятой" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="session" type="radio" default="1" label="Проверка сессий" description="Проверка существующей `плюшки` сессии, пользователи без этой `плюшки` не смогут отослать E-MAIL">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+	</params>
+</mosinstall>

@@ -1,0 +1,17 @@
+/*
+// "Breeze" Administrator Template for Joomla 1.0.x - Version 1.0
+// Based on "Minted One-Point-Five" Administrator Template for Joomla 1.0.x & Mambo 4.6.x - Version 2.3 http://www.joomlaworks.gr
+// License: http://www.gnu.org/copyleft/gpl.html
+// Author: venz
+// Copyright (c) 2008 venzdesign.com - http://www.venzdesign.com
+// *** Last update: April 9th, 2008 ***
+*/
+
+td.cip-leftpane {vertical-align:top;width:99%;}
+td.cip-rightpane {vertical-align:top;}
+td.cip-rightpane #content-pane {margin:-24px 0 0 0;}
+.dynamic-tab-pane-control #publish-page.tab-page,
+.dynamic-tab-pane-control #images-page.tab-page,
+.dynamic-tab-pane-control #metadata-page.tab-page,
+.dynamic-tab-pane-control #link-page.tab-page,
+.dynamic-tab-pane-control #params-page.tab-page {width:330px;}

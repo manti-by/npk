@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Weblinks</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Компонент показа списка WEB-ссылок</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Иконка меню" description="Маленькая иконка для размещения слева или справа от пункта меню, файл должен быть в images/stories/" />
+		<param name="pageclass_sfx" type="text" default="" label="Суффикс класса CSS" description="Суффикс, прибавляемый к имени класса CSS страницы для индивидуальной настроки" />
+		<param name="back_button" type="list" default="" label="Кнопка -Назад-" description="Спрятать/Показать кнопку -Назад-, которая возвращает на предыдущую страницу">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Текст заголовка страницы" description="Спрятать/Показать заголовок страницы">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Текст заголовка страницы" description="Текст вверху страницы. Если оставить пустым, будет проставлено имя меню" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="headings" type="radio" default="1" label="Заголовки таблиц" description="Спрятать/Показать заголовки таблиц">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="hits" type="list" default="" label="Хиты" description="Показать/Спрятать колонку хитов">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="item_description" type="radio" default="1" label="Описание ссылки" description="Спрятать/Показать текст описания ссылки">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat_section" type="radio" default="1" label="Список категорий - Раздел" description="Показать/Спрятать список категорий в режиме списка">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat" type="radio" default="1" label="Список категорий - Категория" description="Спрятать/Показать список категорий в  режиме таблицы">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="description" type="radio" default="1" label="Описание" description="Спрятать/Показать описание">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="description_text" type="textarea" default="" label="Текст описания" rows="5" cols="30" description="Описание для страницы, если оставить пустым, будет использовано _WEBLINKS_DESC из языкового файла"/>
+		<param name="image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Картинка" description="Картинка для страницы, должна быть в /images/stories folder. По умолчанию - web_links.jpg" />
+		<param name="image_align" type="radio" default="right" label="Выравнивание картинки" description="Выравнвание картинки">
+			<option value="left">Влево</option>
+			<option value="right">Вправо</option>
+		</param>
+		<param name="weblink_icons" type="imagelist" directory="/images/M_images" default="" label="Иконка" description="Иконка, отображаемая слева от URL при просмотре в режиме таблицы" />
+	</params>
+</mosinstall>

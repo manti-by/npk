@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Прислать - материал</name>
+	<group>Content|Submit</group>
+	<author>Jason407</author>
+	<creationDate>August 2005</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Создает ссылку для пользователя на отсылку материала в конкретный раздел</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Иконка меню" description="Маленькая иконка для размещения слева или справа от пункта меню, файл должен быть в images/stories/" />
+	</params>
+</mosinstall>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Poll</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Компонент голосований</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Картинка меню" description="Маленькая картинка для размещения слева или справа от пункта меню. Должна быть в папке -images/stories/-" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Суффикс класса CSS" description="A suffix to be applied to the css classes of the page, this allows individual page styling" />
+		<param name="back_button" type="list" default="" label="Кнопка -Назад-" description="Показать/Показать кнопку -Назад- возвращающую на предыдущую страницу.">
+			<option value="">Use Global</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Текст заголовка страницы" description="Показать/Показать заголовок страницы">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Текст заголовка страницы" description="Текст показываемый в качествезаголовка страницы. Если пустое - показывается имя пункта меню." />
+	</params>
+</mosinstall>

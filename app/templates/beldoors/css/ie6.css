@@ -1,0 +1,11 @@
+/**
+author: marco_manti http://crysis.spb.su
+**/
+
+.reklama {
+  position         : absolute;
+  margin-top       : 310px;
+  width            : 20px;
+  height           : 150px;
+  background       : url(../images/reklama.png) no-repeat top left;
+}

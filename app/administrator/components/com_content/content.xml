@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Content Page</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Показ одиночной страницы материала</description>
+	<params>
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Суффикс класса CSS" description="Суффикс, который будет добавлен с имени класса для индивидуальной настройки страницы" />
+		<param name="back_button" type="list" default="" label="Кнопка -Назад-" description="Спрятать/Показать кнопку -Назад-, которая возвращает на предыдущую страницу">
+			<option value="">Использовать глобальные</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="item_title" type="radio" default="1" label="Текст заголовка страницы" description="Спрятать/Показать заголовки материалов">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="link_titles" type="list" default="" label="Заголовки как ссылки" description="Сделать заголовки материалов ссылками">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="introtext" type="radio" default="1" label="Вводный текст" description="Спрятать/Показать вводный текст">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="section" type="radio" default="0" label="Имя раздела" description="Показать/Спрятать имя раздела">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="section_link" type="radio" default="0" label="Имя раздела как ссылка" description="Сделать имя раздела ссылкой на содержание раздела">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="category" type="radio" default="0" label="Имя категории" description="Спрятать/Показать категорию">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="category_link" type="radio" default="0" label="Имя категории как ссылка" description="Сделать имя категории ссылкой на страницу с содержанием категории">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="rating" type="list" default="" label="Рейтинг объекта" description="Спрятать/Показать рейтинг объекта - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="author" type="list" default="" label="Имя автора" description="Спрятать/Показать имя автора - только для этой страницы - only affects this page">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="createdate" type="list" default="" label="Дата создания" description="Спратать/Показать дату создания материала - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="modifydate" type="list" default="" label="Дата изменения" description="Спратать/Показать дату изменения материала - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="pdf" type="list" default="" label="PDF иконка" description="Спратать/Показать иконку PDF - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="print" type="list" default="" label="Иконка печати" description="Спратать/Показать иконку печати - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="email" type="list" default="" label="Email иконка" description="Спратать/Показать иконку E-mail - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="keyref" type="text" size="25" default="" label="Ключ ссылки" description="Текстовая строка для объекта, которая может быть использована как ссылка (как ссылка на справку)" />
+		<param name="docbook_type" type="list" default="" label="DocBook тип" description="Связывается тип DocBook документа с материалом (Примечание: экспериментальная функция, не для использования).">
+			<option value=""></option>
+			<option value="appendix">Appendix</option>
+			<option value="article">Article</option>
+			<option value="book">Book</option>
+			<option value="chapter">Chapter</option>
+			<option value="glossary">Glossary</option>
+			<option value="part">Part</option>
+			<option value="refentry">Refentry</option>
+			<option value="section">Section</option>
+		</param>
+	</params>
+</mosinstall>

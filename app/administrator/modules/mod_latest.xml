@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module">
+	<name>Latest News</name>
+	<author>Joomla! Project</author>
+	<creationDate>Июль 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Модуль показывает список последних добавленных на сайте материалов. Объекты с главной страницы в список не попадают.</description>
+	<files>
+		<filename module="mod_latest">mod_latest.php</filename>
+	</files>
+	<params/>
+</mosinstall>

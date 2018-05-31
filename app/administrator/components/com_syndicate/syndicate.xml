@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Syndicate</name>
+	<author>Joomla! Project</author>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Копмонент управления экспортом RSS-лент</description>
+	<params>
+		<param name="check" type="radio" default="1" label="Проверка секретности" description="Если разрешено, то работа будет возможна только если `mod_rssfeed` модуль опубликован">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="cache" type="radio" default="1" label="Кэш" description="Кэширование данных RSS-ленты">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="cache_time" type="text" size="8" default="3600" label="Время жизни кэша" description="Кэшированный файл будет обновляться каждые # секунд" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="count" type="text" size="4" default="5" label="# материалов" description="Количество материалов для включения в RSS-ленту" />
+		<param name="title" type="text" size="40" default="Экспортировано из Joomla Lavra Edition! 1.0.9" label="Заголовок" description="Заголовок RSS-ленты" />
+		<param name="description" type="textarea" rows="5" cols="30" default="Joomla LE! RSS-экспорт" label="Описание RSS-ленты" description="Описание RSS-ленты" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="image_file" type="imagelist" directory="/images/M_images" default="" label="Иконка" description="Иконка RSS-канала" />
+		<param name="image_alt" type="text" size="30" default="Joomla LE! 1.0.9" label="Alt-текст иконки" description="Альтернативный текст иконки" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="limit_text" type="radio" default="1" label="Ограничивать длину текста" description="Ограничивать длину экспортируемого текста на длину, указанную ниже (слов)">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="text_length" type="text" size="4" default="20" label="Длина текста" description="Ограничивать экспорт столькими словами - 0 - показать весь текст" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="rss091" type="radio" default="1" label="RSS 0.91" description="Запретить/Разрешить экспорт в RSS 0.91 формате">
+			<option value="0">Запретить</option>
+			<option value="1">Разрешить</option>
+		</param>
+		<param name="rss10" type="radio" default="1" label="RSS 1.0" description="Запретить/Разрешить экспорт в RSS 1.0 формате">
+			<option value="0">Запретить</option>
+			<option value="1">Разрешить</option>
+		</param>
+		<param name="rss20" type="radio" default="1" label="RSS 2.0" description="Запретить/Разрешить экспорт в RSS 2.0 формате">
+			<option value="0">Запретить</option>
+			<option value="1">Разрешить</option>
+		</param>
+		<param name="atom03" type="radio" default="1" label="ATOM 0.3" description="Запретить/Разрешить экспорт в ATOM 0.3 формате">
+			<option value="0">Запретить</option>
+			<option value="1">Разрешить</option>
+		</param>
+		<param name="opml" type="radio" default="1" label="OPML" description="Запретить/Разрешить экспорт в OPML формате">
+			<option value="0">Запретить</option>
+			<option value="1">Разрешить</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="orderby" type="list" default="front" label="Порядок" description="Определяет порядок, в котором материалы включаются в RSS-ленту">
+			<option value="front">По умолчанию</option>
+			<option value="front">В порядке, как на Главной</option>
+			<option value="date">Старые первыми</option>
+			<option value="rdate">Последние первыми</option>
+			<option value="alpha">Заголовок А - Я</option>
+			<option value="ralpha">Заголовок Я - А</option>
+			<option value="author">По автору А - Я</option>
+			<option value="rauthor">По автору Я - А</option>
+			<option value="hits">Хиты по убыванию</option>
+			<option value="rhits">Хиты по возрастанию</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="live_bookmark" type="list" default="0" label="Датчик RSS" description="Активировать поддержку датчика RSS для Firefox и тех программ, которые понимают этот формат">
+			<option value="0">Откл.</option>
+			<option value="RSS0.91">RSS 0.91</option>
+			<option value="RSS1.0">RSS 1.0</option>
+			<option value="RSS2.0">RSS 2.0</option>
+			<option value="ATOM0.3">ATOM 0.3</option>
+		</param>
+	</params>
+</mosinstall>

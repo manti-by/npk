@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="template">
+
+<name>cRS_osaka</name>
+<creationDate>06/11/2009</creationDate>
+<author>marco_manti</author>
+<copyright>marco_manti(R) 2004-2009</copyright>
+<authorEmail>marco.manti@gmail.com</authorEmail>
+<authorUrl>http://crysis.spb.su</authorUrl>
+<version>r1</version>
+<description>Шаблон создан для сайта НП-Комплекс.</description>
+
+<files>
+  <filename>index.php</filename>
+  <filename>index.html</filename>
+  <filename>template_thumbnail.png</filename>
+</files>
+
+<images>
+  <filename>images/btm_bg_fill.png</filename>
+  <filename>images/foot_image.png</filename>
+  <filename>images/mid_bg_fill.png</filename>
+  <filename>images/top_bg_fill.png</filename>
+  <filename>images/top_image.png</filename>
+</images>
+
+<css>
+  <filename>css/template_css.css</filename>
+</css>
+
+</mosinstall>

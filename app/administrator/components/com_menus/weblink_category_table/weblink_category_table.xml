@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Таблица - категория ссылок</name>
+	<group>Component</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Показывает таблицу ссылок имеющихся в категории</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Иконка меню" description="Маленькая иконка для размещения слева или справа от пункта меню, файл должен быть в images/stories/" />
+		<param name="pageclass_sfx" type="text" default="" label="Суффикс класса CSS" description="Суффикс, прибавляемый к имени класса CSS страницы для индивидуальной настроки" />
+		<param name="back_button" type="list" default="" label="Кнопка -Назад-" description="Спрятать/Показать кнопку -Назад-, которая возвращает на предыдущую страницу">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Текст заголовка страницы" description="Спрятать/Показать заголовок страницы">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Текст заголовка страницы" description="Текст вверху страницы. Если оставить пустым, будет проставлено имя меню" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="headings" type="radio" default="1" label="Заголовки таблиц" description="Спрятать/Показать заголовки таблиц">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="hits" type="list" default="" label="Хиты" description="Показать/Спрятать колонку хитов">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="item_description" type="radio" default="1" label="Описание ссылки" description="Спрятать/Показать текст описания ссылки">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat" type="radio" default="1" label="Другие категории" description="При просмотре категории, Спрятать/Показать список других категорий">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+ 		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="weblink_icons" type="imagelist" directory="/images/M_images" default="" label="Иконка" description="Иконка, показываемая слева от адреса URL" />
+	</params>
+</mosinstall>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Wrapper</name>
+	<group>Other</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Создает IFrame и загружает туда внешнюю страницу или сайт</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Иконка меню" description="Маленькая иконка для размещения слева или справа от пункта меню, файл должен быть в images/stories/" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Суффикс класса CSS" description="Суффикс, прибавляемый к имени класса CSS страницы для индивидуальной настроки" />
+		<param name="back_button" type="list" default="" label="Кнопка -Назад-" description="Спрятать/Показать кнопку -Назад-, которая возвращает на предыдущую страницу">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Текст заголовка страницы" description="Спрятать/Показать заголовок страницы">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Текст заголовка страницы" description="Текст вверху страницы. Если оставить пустым, будет проставлено имя меню" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="scrolling" type="radio" default="auto" label="Полосы прокрутки" description="Показать/Спрятать вертикальные и голизонтальные полосы прокрутки.">
+			<option value="no">Нет</option>
+			<option value="yes">Да</option>
+			<option value="auto">Авто</option>
+		</param>
+		<param name="width" type="text" size="5" default="100%" label="Ширина" description="Ширна окна, можно ввести как абсолютные значения, так и относительные" />
+		<param name="height" type="text" size="5" default="500" label="Высота" description="Высота окна" />
+		<param name="height_auto" type="radio" default="1" label="Авто-высота" description="Высота будет автоматически установлена по размеру страницы. Работает только для страниц с этого же домена. This will break XHTML compatability for this page.">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="add" type="radio" default="1" label="Авто http://" description="По умолчанию будет добавлено http:// если обнаружено http:// или https://">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+	</params>
+</mosinstall>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Statistics</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Модуль статистики показывает информацию о софте сервера и о количестве посещений пользователей, количестве записей в БД и количестве WEB-ссылок.</description>
+	<files>
+		<filename module="mod_stats">mod_stats.php</filename>
+	</files>
+	<params>
+		<param name="serverinfo" type="radio" default="0" label="Информация о сервере" description="Показывает информацию о сервере">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="siteinfo" type="radio" default="0" label="Информация о сайте" description="Показывает информацию о сайте">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="counter" type="radio" default="0" label="Счетчик посещений" description="Показывает счетчик посещений">
+			<option value="1">Да</option>
+			<option value="0">Нет</option>
+		</param>
+		<param name="increase" type="text" default="0" label="Показания счетчика" description="Введите начальные показания счетчика" />
+		<param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS модуля" description="Суффикс для добавления к классу CSS модуля (table.moduletable), для индивидуальной настройки модуля." />
+	</params>
+</mosinstall>

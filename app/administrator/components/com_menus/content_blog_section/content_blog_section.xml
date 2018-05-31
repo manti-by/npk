@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Блог - материалы раздела</name>
+	<group>Content</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Показывает страницу материалов из множества разделов в формате блога</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Иконка меню" description="Маленькая иконка для размещения слева или справа от пункта меню, файл должен быть в images/stories/" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Суффикс класса CSS" description="Суффикс, прибавляемый к имени класса CSS страницы для индивидуальной настроки" />
+		<param name="back_button" type="list" default="" label="Кнопка -Назад-" description="Спрятать/Показать кнопку -Назад-, которая возвращает на предыдущую страницу">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Текст заголовка страницы" description="Количество материалов, у которых показывается только вступление." />
+		<param name="page_title" type="radio" default="1" label="Текст заголовка страницы" description="Спрятать/Показать заголовок страницы">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="leading" type="text" size="3" default="1" label="# Полностью" description="Количество материалов, показываемых полностью. 0 - если таких нет." />
+		<param name="intro" type="text" size="3" default="4" label="# Вступление" description="Количество материалов, у которых показывается только вступление." />
+		<param name="columns" type="text" size="3" default="2" label="Колонки" description="Когда показывается вступление, во сколько колонок выстраивать материалы" />
+		<param name="link" type="text" size="3" default="4" label="# Ссылки" description="Количество материалов, показываемых как однострочные ссылки." />
+		<param name="orderby_pri" type="list" default="" label="Сортировка категорий" description="Сортировка материалов по категориям">
+			<option value="">Нет сортировки</option>
+			<option value="alpha">Заголовок А - Я</option>
+			<option value="ralpha">Заголовок Я - А</option>
+			<option value="order">Сортировать</option>
+		</param>
+		<param name="orderby_sec" type="list" default="" label="Порядок сортировки" description="Порядок, в котором будут показаны материалы.">
+			<option value="">По умолчанию</option>
+			<option value="date">Старые первыми</option>
+			<option value="rdate">Последние первыми</option>
+			<option value="alpha">Заголовок А - Я</option>
+			<option value="ralpha">Заголовок Я - А</option>
+			<option value="author">По автору А - Я</option>
+			<option value="rauthor">По автору Я - А</option>
+			<option value="hits">Хиты по убыванию</option>
+			<option value="rhits">Хиты по возрастанию</option>
+			<option value="order">Сортировать</option>
+		</param>
+		<param name="pagination" type="list" default="2" label="Пагинация" description="Показать/Спрятать пагинацию">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+			<option value="2">Авто</option>
+		</param>
+		<param name="pagination_results" type="radio" default="1" label="Результаты пагинации" description="Показать/Спрятать результаты подсчета пагинации ( 1-4 из 4 )">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="image" type="radio" default="1" label="MOSImages" description="Показывать {mosimages}.">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 		<param name="description" type="radio" default="0" label="Описание" description="Спрятать/Показать описание раздела">
+ 			<option value="0">Спрятать</option>
+ 			<option value="1">Показать</option>
+ 		</param>
+		<param name="description_image" type="radio" default="0" label="Картинка описания" description="Спрятать/Показать описание раздела">
+ 			<option value="0">Спрятать</option>
+ 			<option value="1">Показать</option>
+ 		</param>
+ 		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="category" type="radio" default="0" label="Имя категории" description="Спрятать/Показать категорию">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="category_link" type="radio" default="0" label="Имя категории как ссылка" description="Сделать имя категории ссылкой на страницу с содержанием категории">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="item_title" type="radio" default="1" label="Заголовки материалов" description="Спрятать/Показать заголовки материалов">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="link_titles" type="list" default="" label="Заголовки как ссылки" description="Сделать заголовки материалов ссылками">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="readmore" type="list" default="" label="Еще..." description="Спрятать/Показать ссылку -Еще..-">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="rating" type="list" default="" label="Рейтинг объекта" description="Спрятать/Показать рейтинг объекта - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="author" type="list" default="" label="Имя автора" description="Спрятать/Показать имя автора - только для этой страницы - only affects this page">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="createdate" type="list" default="" label="Дата создания" description="Спратать/Показать дату создания материала - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="modifydate" type="list" default="" label="Дата изменения" description="Спратать/Показать дату изменения материала - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="pdf" type="list" default="" label="PDF иконка" description="Спратать/Показать иконку PDF - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="print" type="list" default="" label="Иконка печати" description="Спратать/Показать иконку печати - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="email" type="list" default="" label="Email иконка" description="Спратать/Показать иконку E-mail - только для этой страницы">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+ 		<param name="unpublished" type="radio" default="1" label="Неопубликованные" description="Показать/Спрятать неопубликованные материалы пользователям со статусом -Publisher- и выше">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+ 		</param>
+	</params>
+</mosinstall>

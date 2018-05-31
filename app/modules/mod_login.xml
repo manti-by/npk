@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Login Form</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Этот модуль показывает форму для ввода Имени пользователя и пароля. Еще он показывает ссылку на отправку пароля, если он забыт. Если регистрация пользователей разрешена, (см. такую настройку), будет присутствовать ссылка для регистрации.</description>
+	<files>
+		<filename module="mod_login">mod_login.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS модуля" description="Суффикс для добавления к классу CSS модуля (table.moduletable), для индивидуальной настройки модуля." />
+		<param name="pretext" type="textarea" cols="20" rows="5" default="" label="Пре-текст" description="Текст или HTML, который показывается перед логин-формой" />
+		<param name="posttext" type="textarea" cols="20" rows="5" label="Пост-текст" description="Текст или HTML, который показывается после логин-формы" />
+		<param name="login" type="text" default="" label="URL перенаправления при Входе" description="На какую страницу перенаправить после входа, если пусто - на главную" />
+		<param name="logout" type="text" default="" label="URL перенаправления при вЫходе" description="На какую страницу перенаправить после вЫхода, если пусто - на главную" />
+		<param name="login_message" type="radio" default="0" label="Сообщение при входе" description="Показать/Спрятать ява-попап окно, сообщающее об успешном входе.">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="logout_message" type="radio" default="0" label="Сообщение при выходе" description="Показать/Спрятать ява-попап окно, сообщающее об успешном вЫходе.">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="greeting" type="radio" default="1" label="Приветствие" description="Показать/Спрятать текст приветствия">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="name" type="list" default="0" label="Имя/Псевдоним">
+			<option value="0">Псевдоним</option>
+			<option value="1">Имя</option>
+		</param>
+	</params>
+</mosinstall>

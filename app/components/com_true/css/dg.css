@@ -1,0 +1,148 @@
+.tg_clear {
+	clear:both;}
+.dt1{}
+.dt2  /*Рамка для картинок*/ {
+	border:1px solid #cccccc; 
+	margin:2px !important;
+	padding:4px;
+	background:transparent;	}
+.dt22  /*Рамка для картинок*/ {
+	border:1px solid #cccccc; 
+	margin:8px !important;
+	padding:4px;
+	background:transparent;	}
+.dt2:hover{}
+.dt5{text-align: right;} 
+.dt6{}
+ 
+.tg_author, .tg_author a{
+	color:#777 !important;}
+a.true_next, a.true_prev {
+	margin: 4px;
+	display:block;	
+	font-size: 14px !important;
+	font-weight: bold;}
+	a.true_next {
+		background:url(../images/nav_next.gif) right center no-repeat;
+		padding: 0 22px 0 0;
+		float:right;}
+	a.true_prev {
+		background:url(../images/nav_prev.gif) left center no-repeat;
+		padding: 0 0 0 22px;
+		float:left;}
+	a.edit_pic {
+		font-weight:normal;}
+.edit_pic a {
+	font-weight:normal;}
+img.dt6 { vertical-align: top; padding-right: 10px;	border: 0px;}/**/
+img.dt5 { vertical-align: top; padding-left: 10px; border: 0px;}/**/
+.dt_links /*Рамка для панели навигации*/ {
+	border:1px solid #cccccc; 
+	padding:4px;
+	margin: 4px !important;
+	background:transparent;	
+	text-align: right;
+	clear:both;}
+.dt_image_title /* рамка для названия картинки */ {
+
+	padding:2px 4px;
+	margin: 4px 0 10px 0 !important;
+	text-align: left;
+	clear:both;}
+.dt_image_title h1 {
+	font-size: 18px !important;
+	line-height:20px !important;
+	margin: 3px 0 !important;}
+table.dg_special {}/* Таблица для спеиальных показов - авторы,популярное,и так далее*/
+table.dg_special h3 {font-size: 14px !important; margin: 4px !important;}/* Алфавит для авторов*/
+ul.dg_owner { margin:0;} /*Список авторов*/
+ul.dg_owner li {margin:3px 0 3px 15px;}/*Спсиок авторов*/
+ul.dg_owner li a {}/*ССылка из списка авторов*/
+span.dg_kopir { /*Коопирайты */
+	text-align:right; display:block; padding: 4px 0 !important;border-top: 1px solid #BBB; margin: 0 4px !important;}
+	span.dg_kopir a { color: #BBB !important; font-weight:normal !important; font-size:11px !important;}
+div.true_nav { /* Навигация в категории */
+	text-align:right;
+	margin: 6px 4px;
+	color: #AAA;}
+	div.true_nav a {
+		display: inline;
+		border:1px solid #BBB;
+		padding:2px 4px;
+		margin: 0 2px;
+		font-weight:bold;
+		text-decoration:none;
+		outline:none;}
+	div.true_nav a:link, div.true_nav a:visited {
+		background-color: #BBB;}
+	div.true_nav a:hover {
+		background-color: #FFF;}
+div.dg_nav a {}
+div.dg_desc, div.dg_count { margin:4px !important;} /* Описание категории */
+div.dg_count { border-top: 1px solid #BBB; padding: 4px 0;}
+.tg_edit {}
+.tg_edit a {
+	height: 16px;
+	background: url(../images/edit.png) left center no-repeat;
+	padding-left: 20px;
+}
+/*--------Голосование----------------*/
+.tgvote-star,
+.tgvote-star a:hover,
+.tgvote-star .current {background:url(../images/star.gif) left -1000px repeat-x;}
+.tgvote-star  {
+	position:relative;
+	width:125px;
+	height:25px;
+	overflow:hidden;
+	list-style:none;
+	margin:0;
+	padding:0;
+	background-position:left top;}
+.tgvote-star li {display:inline;background-image:none;padding:0;}
+.tgvote-star a,
+.tgvote-star .current {
+	position:absolute;
+	top:0;
+	left:0;
+	text-indent:-1000em;
+	height:25px;
+	line-height:16px;
+	outline:none;
+	overflow:hidden;
+	border:none;
+	cursor:pointer;
+}
+.tgvote-star a:hover {background-position:left bottom;}
+.tgvote-star a.one-star {width:20%;z-index:6;}
+.tgvote-star a.two-stars {width:40%;z-index:5;}
+.tgvote-star a.three-stars {width:60%;z-index:4;}
+.tgvote-star a.four-stars {width:80%;z-index:3;}
+.tgvote-star a.five-stars {width:100%;z-index:2;}
+.tgvote-star .current {z-index:1;background-position:left center;}
+.tgvote-inline {display:-moz-inline-block;display:-moz-inline-box;display:inline;vertical-align:middle;line-height:16px;}
+.tgvote-box {margin-left:0;}
+/*-------- оформление модуля---------------*/
+ul.tg_mod_img {list-style:none;}
+ul.tg_mod_img li {list-style:none; display:inline; float:left;}
+ul.tg_mod_img li a {border: 1px solid #EEE; margin: 3px; padding:5px;}
+/*-------- оформление среднего эскиза---------------*/
+td.tg_image img {
+	border:1px solid #999;
+	padding:8px;
+	background: #FFF url(../images/back_img.png) bottom right no-repeat;}
+* html td.tg_image img {
+	background: #FFF !important;}
+	td.tg_image span {
+		display:block;
+		text-align:center;}
+/*-------- Pathway---------------*/		
+.tg_pathway {} 
+	.tg_pathway a {} 
+/*-------- Search ---------------*/		
+.tg_search {
+	display:inline;
+	float:right;
+	clear:both;}
+	.tg_search input.inputbox {	
+			border:1px solid #cccccc; }

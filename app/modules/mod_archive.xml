@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Archived Content</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Модуль показывает список календарных месяцев с содержимым в виде архивных материалов.
+  Когда вы меняете статус материала на 'Архивный' этот список будет сгенерирован автоматически.</description>
+	<files>
+		<filename module="mod_archive">mod_archive.php</filename>
+	</files>
+	<params>
+		<param name="count" type="text" default="10" label="Количество" description="Количество объектов для показа (умолчание = 10)" />
+		<param name="cache" type="radio" default="0" label="Включить кэш" description="Разрешает кэширование результатов работы модуля">
+			<option value="0">Нет</option>
+			<option value="1">Да</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Суффикс класса CSS модуля" description="Суффикс для добавления к классу CSS модуля (table.moduletable), для индивидуальной настройки модуля." />
+	</params>
+</mosinstall>

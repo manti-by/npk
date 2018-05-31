@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Login</name>
+	<author>Joomla! Project</author>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Параметры для страницы входа</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Иконка меню" description="Маленькая иконка для размещения слева или справа от пункта меню, файл должен быть в images/stories/" />
+		<param name="pageclass_sfx" type="text" default="" label="Суффикс класса CSS" description="Суффикс, прибавляемый к имени класса CSS страницы для индивидуальной настроки" />
+		<param name="back_button" type="list" default="" label="Кнопка -Назад-" description="Спрятать/Показать кнопку -Назад-, которая возвращает на предыдущую страницу">
+			<option value="">Использовать общие настройки</option>
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Текст заголовка страницы" description="Спрятать/Показать заголовок страницы">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="header_login" type="text" size="30" default="" label="Заголовок страницы входа" description="Текст вверху страницы. Если оставить пустым, будет проставлено имя меню" />
+		<param name="login" type="text" size="30"  default="" label="URL перенаправления при входе" description="На какую страницу перенаправлять после входа. Если оставить пустым - на Главную страницу" />
+		<param name="login_message" type="radio" default="0" label="JS сообщение при входе" description="Спрятать/Показать всплывающее сообщение при успешном входе">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="description_login" type="radio" default="0" label="Описание входа" description="Спрятать/Показать описание входа">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="description_login_text" type="textarea" cols="30" rows="5" default="" label="Текст описания входа" description="Текст показываемый на странице входа, если оставить пустым, будет использовано _LOGIN_DESCRIPTION" />
+		<param name="image_login" type="imagelist" directory="/images/stories" default="" label="Картинка входа" description="Картинка для страницы входа" />
+		<param name="image_login_align" type="radio" default="right" label="Выравнивание картинки входа" label="Выравнивание картинки входа">
+			<option value="left">Влево</option>
+			<option value="right">Вправо</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="header_logout" type="text" size="30" default="" label="Заголовок страницы выхода" description="Текст вверху страницы. Если оставить пустым, будет проставлено имя меню" />
+		<param name="logout" type="text" size="30"  default="" label="URL перенаправления при выходе" description="На какую страницу перенаправлять после выхода. Если оставить пустым - на Главную страницу" />
+		<param name="logout_message" type="radio" default="1" label="JS сообщение при выходе" description="Спрятать/Показать JS сообщение об успешном выходе">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="description_logout" type="radio" default="1" label="Описание выхода" description="Спрятать/Показать описание выхода">
+			<option value="0">Спрятать</option>
+			<option value="1">Показать</option>
+		</param>
+		<param name="description_logout_text" type="textarea" cols="30" rows="5" default="" label="Текст описания выхода" description="Текст показываемый на странице выхода, если оставить пустым, будет использовано _LOGOUT_DESCRIPTION" />
+		<param name="image_logout" type="imagelist" directory="/images/stories" default="" label="Картинка выхода" description="Картинка для страницы выхода" />
+		<param name="image_logout_align" type="radio" default="1" label="Выравнивание картинки выхода" description="Выравнивание картинки выхода">
+			<option value="left">Влево</option>
+			<option value="right">Вправо</option>
+		</param>
+	</params>
+</mosinstall>

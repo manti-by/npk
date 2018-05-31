@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<mosinstall type="module" version="4.5.2.х">
+	<name>mod_andyr_button</name>
+	<author>AndyR</author>
+	<creationDate>11.09.2005</creationDate>
+	<copyright>AndyR</copyright>
+	<license>GPL</license>
+	<authorEmail>andyr@mail.ru</authorEmail>
+	<authorUrl>http://andyr.mrezha.ru</authorUrl>
+	<version>1.0</version>
+	<description>
+  <![CDATA[
+Модуль графической кнопки со ссылкой <b><font color="#FF9933"><font size="4">Mod_AndyR_Button</font></font><font size="4">
+<font color="#FF0000">&nbsp;v.1.0</font></font></b><p>
+<font color="#003366">Модуль предназначен для построения системы толл-баров основанных на графических изображениях.<br>Модуль вставляет таблицу с расположенной внутри ячейки таблицы иконкой, надписью и ссылкой, назначенной этой надписи и иконке.<br>Позволяет ввести всплывающую надпись при нахождении мыши над элементом, имеющим ссылку.<br>
+<br>Для построения системы толл-баров используйте копирование одного установленного модуля.<br>Толл-бар строится путем создания всех требуемых кнопок по копии модуля для каждой кнопки.</font></p>
+<ul>
+	<li><font color="#9900CC">- при отсутствии текста надписи, надпись не отображается
+и место под нее не резервируется;</font></li>
+	<li><font color="#9900CC">- при отсутствии ссылки, ссылка в код не попадает;</font></li>
+	<li><font color="#9900CC">- обязательный атрибут - только файл картинки;</font></li>
+	<li><font color="#9900CC">- картинки должны быть расположены в каталоге
+	</font><font color="#009933"><b>images/stories/icons</b></font></li>
+</ul>
+<ul>
+	<li>- AndyR - <a href="mailto:andyr@mail.ru">andyr@mail.ru</a></li>
+	<li>- Сайт поддержки CMS &quot;Mambo&quot;/&quot;Joomla&quot; -
+	<a target="_blank" href="http://andyr.mrezha.ru">http://andyr.mrezha.ru</a></li>
+</ul>
+  ]]>
+	</description>
+	<files>
+		<filename module="mod_andyr_button">mod_andyr_button.php</filename>
+	</files>
+	<params>
+		<param name="border" type="list" default="0" label="Толщина обрамления" description="Толщина границы таблицы">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</param>
+		<param name="text" type="text" default="" label="Надпись" description="Надпись над кнопкой" />
+		<param name="image" type="imagelist" directory="/images/stories/icons" hide_none="1" default="" label="Файл картинки" description="Выберите картинку для отображения (должна быть в images/stories/icons)" />
+		<param name="link" type="text" default="" label="Ссылка" description="URL для перенаправления, если произошел щелчек по картинке или надписи, например: http://andyr.mrezha.ru" />
+		<param name="title" type="text" default="" label="Всплывающая подсказка" description="Всплывающая подсказка при нахождении мыши над картинкой и надписью" />
+		<param name="align" type="list" default="0" label="Выравнивание" description="Выравнивание по горизонтали">
+			<option value="left">Влево</option>
+			<option value="center">По центру</option>
+			<option value="right">Вправо</option>
+		</param>
+	</params>
+</mosinstall>
