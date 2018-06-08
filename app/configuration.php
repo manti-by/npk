@@ -19,7 +19,7 @@ $mosConfig_MetaKeys = 'Межкомнатые двери,входные двери,окна и балконные двери,
     termo 60,окна монблан,стеклопакет,белизна,пятикамерный профиль,1-но камерный
     пакет,2-х камерный пакет.';
 
-$mosConfig_live_site = 'http://localhost:8088';
+$mosConfig_live_site = 'http://npk.of.by';
 $mosConfig_absolute_path = '/usr/local/apache2/htdocs';
 $mosConfig_cachepath = '/tmp';
 
@@ -35,7 +35,7 @@ $mosConfig_sendmail = '/usr/sbin/sendmail';
 $mosConfig_fromname = 'УП НП-Комплекс';
 $mosConfig_mailfrom = 'beldoors@gmail.com';
 
-$mosConfig_host = 'mysql';
+$mosConfig_host = 'npk-mysql';
 $mosConfig_port = 3336;
 $mosConfig_user = 'npk';
 $mosConfig_password = 'pa55word';
