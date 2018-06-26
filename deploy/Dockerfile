@@ -7,8 +7,8 @@ ENV PHP_INI_DIR /etc/php
 
 RUN mkdir -p $PHP_INI_DIR/conf.d
 
-RUN apt-get update
-RUN apt-get install -y  dos2unix vim curl patch make wget gcc perl libxml2-dev autoconf \
+RUN apt-get update --fix-missing
+RUN apt-get install -y  vim curl patch make wget gcc perl libxml2-dev autoconf \
                         bzip2 \
                         libcurl4-openssl-dev \
                         libjpeg-dev \
@@ -26,8 +26,9 @@ RUN ln -s /usr/lib/x86_64-linux-gnu/libjpeg.a /usr/lib/libjpeg.a \
     && ln -s /usr/lib/x86_64-linux-gnu/libmysqlclient.a /usr/lib/libmysqlclient.a
 
 
+COPY sources/httpd-$VERSION_APACHE.tar.gz /usr/src
+
 RUN cd /usr/src && \
-    wget https://archive.apache.org/dist/httpd/httpd-$VERSION_APACHE.tar.gz && \
     tar -zxvf httpd-$VERSION_APACHE.tar.gz && \
     rm httpd-$VERSION_APACHE.tar.gz && \
     cd httpd-$VERSION_APACHE && \
@@ -39,13 +40,16 @@ RUN cd /usr/src && \
     --enable-setenvif  --enable-status --enable-authz_host && \
     make && make install
 
+
+COPY sources/php-$VERSION_PHP.tar.gz /usr/src
+COPY sources/php-$VERSION_PHP.patch /usr/src
+
 RUN cd /usr/src && \
-    wget http://museum.php.net/php5/php-$VERSION_PHP.tar.gz && \
     tar -zxvf php-$VERSION_PHP.tar.gz && \
     rm php-$VERSION_PHP.tar.gz && \
     mv php-$VERSION_PHP php && \
     cd php && \
-    curl -s https://mail.gnome.org/archives/xml/2012-August/txtbgxGXAvz4N.txt | patch -p0 && \
+    cat /usr/src/php-$VERSION_PHP.patch | patch -p0 && \
     ./configure  --with-config-file-path="$PHP_INI_DIR" \
 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" \
 		--with-fpm-conf="$PHP_INI_DIR/php-fpm.conf" \
@@ -58,30 +62,22 @@ RUN mkdir -p /usr/local/lib/php/extensions/no-debug-non-zts-20060613/
 RUN cat /usr/src/php/php.ini-recommended | sed 's/^;\(date.timezone.*\)/\1 \"Etc\/UTC\"/' > $PHP_INI_DIR/php.ini \
 	&& sed -i 's/\(extension_dir = \)\"\.\/\"/\1\"\/usr\/local\/lib\/php\/extensions\/no-debug-non-zts-20060613\/\"/' $PHP_INI_DIR/php.ini
 
-COPY httpd.conf /usr/local/apache2/conf/httpd.conf
+COPY conf/httpd.conf /usr/local/apache2/conf/httpd.conf
 
-COPY php.ini /etc/php/php.ini
+COPY conf/php.ini /etc/php/php.ini
 
 RUN rm /usr/local/apache2/htdocs/*
 
-COPY docker-php-ext-* /usr/local/bin/
+COPY scripts/docker-php-ext-* /usr/local/bin/
 
 RUN ln -s /usr/local/apache2/bin/apachectl /usr/local/bin/
 
-COPY run.sh /bin/run.sh
+COPY scripts/run-apache.sh /bin/run-apache.sh
 
-COPY install_ext.sh /bin/install_ext.sh
-
-RUN dos2unix /usr/local/bin/docker-php-ext-install /usr/local/bin/docker-php-ext-install
-
-RUN dos2unix /usr/local/bin/docker-php-ext-configure /usr/local/bin/docker-php-ext-configure
-
-RUN dos2unix /bin/run.sh /bin/run.sh
-
-RUN dos2unix /bin/install_ext.sh /bin/install_ext.sh
+COPY scripts/install-ext.sh /bin/install-ext.sh
 
 WORKDIR /usr/local/apache2/htdocs
 
-RUN install_ext.sh
+RUN install-ext.sh
 
-CMD ["/bin/run.sh"]
+CMD ["/bin/run-apache.sh"]

@@ -5,11 +5,11 @@ npk.of.by
 About
 -----
 
-Npk.of.by repo.
+Repo for http://npk.of.by.
 
-Author: Alex Manti <manti.by@gmail.com>
+Author: Alexander Chaika <manti.by@gmail.com>
 
-Requirements: PHP 5.2.17, MySQL 5.5.59
+Requirements: Apache 2.2.10, PHP 5.2.17, MySQL 5.5.59
 
 
 Installation
@@ -17,7 +17,7 @@ Installation
 
 1. Install [Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
-2. Build LAMP from docker file
+2. Build LAMP from Docker file
 
         $ docker build -t mantiby/apache-php-5-2 .
         

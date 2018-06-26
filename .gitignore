@@ -1,0 +1,3 @@
+app/logs/apache_error.log
+app/logs/php_error.log
+app/configuration.php
