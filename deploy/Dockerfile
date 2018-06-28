@@ -33,11 +33,11 @@ RUN cd /usr/src && \
     rm httpd-$VERSION_APACHE.tar.gz && \
     cd httpd-$VERSION_APACHE && \
     ./configure --enable-mods-shared="all" --enable-so --enable-rewrite --enable-headers  \
-    --enable-log_config --enable-logio --enable-prefork --enable-http_core \
-    --enable-so --enable-actions --enable-alias --enable-autoindex --enable-cache \
-    --enable-cgi --enable-deflate --enable-dir --enable-env --enable-expires \
-    --enable-geoip --enable-mime --enable-negotiation \
-    --enable-setenvif  --enable-status --enable-authz_host && \
+        --enable-log_config --enable-logio --enable-prefork --enable-http_core \
+        --enable-so --enable-actions --enable-alias --enable-autoindex --enable-cache \
+        --enable-cgi --enable-deflate --enable-dir --enable-env --enable-expires \
+        --enable-geoip --enable-mime --enable-negotiation \
+        --enable-setenvif  --enable-status --enable-authz_host && \
     make && make install
 
 
@@ -51,8 +51,8 @@ RUN cd /usr/src && \
     cd php && \
     cat /usr/src/php-$VERSION_PHP.patch | patch -p0 && \
     ./configure  --with-config-file-path="$PHP_INI_DIR" \
-		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" \
-		--with-fpm-conf="$PHP_INI_DIR/php-fpm.conf" \
+        --with-config-file-scan-dir="$PHP_INI_DIR/conf.d" \
+        --with-fpm-conf="$PHP_INI_DIR/php-fpm.conf" \
     --with-apxs2=/usr/local/apache2/bin/apxs \
     --without-iconv && \
     make && make install
@@ -60,7 +60,7 @@ RUN cd /usr/src && \
 RUN mkdir -p /usr/local/lib/php/extensions/no-debug-non-zts-20060613/
 # Setup timezone to Etc/UTC and fix extension path
 RUN cat /usr/src/php/php.ini-recommended | sed 's/^;\(date.timezone.*\)/\1 \"Etc\/UTC\"/' > $PHP_INI_DIR/php.ini \
-	&& sed -i 's/\(extension_dir = \)\"\.\/\"/\1\"\/usr\/local\/lib\/php\/extensions\/no-debug-non-zts-20060613\/\"/' $PHP_INI_DIR/php.ini
+    && sed -i 's/\(extension_dir = \)\"\.\/\"/\1\"\/usr\/local\/lib\/php\/extensions\/no-debug-non-zts-20060613\/\"/' $PHP_INI_DIR/php.ini
 
 COPY conf/httpd.conf /usr/local/apache2/conf/httpd.conf
 
