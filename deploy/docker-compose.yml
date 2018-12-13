@@ -11,7 +11,7 @@ npk-mysql:
 npk-joomla:
   image: mantiby/apache-php-5-2
   ports:
-    - "8080:80"
+    - "8081:80"
   links:
     - npk-mysql
   volumes:
