@@ -19,7 +19,7 @@ $mosConfig_MetaKeys = 'Межкомнатые двери,входные двери,окна и балконные двери,
     termo 60,окна монблан,стеклопакет,белизна,пятикамерный профиль,1-но камерный
     пакет,2-х камерный пакет.';
 
-$mosConfig_live_site = 'https://npk.of.by';
+$mosConfig_live_site = 'http://npk.of.by';
 $mosConfig_absolute_path = '/usr/local/apache2/htdocs';
 $mosConfig_cachepath = '/tmp';
 
