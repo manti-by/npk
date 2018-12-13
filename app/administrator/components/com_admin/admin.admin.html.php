@@ -607,7 +607,7 @@ class HTML_admin_misc {
 		?>
 		<pre>
 			<?php
-			readfile( $GLOBALS['mosConfig_absolute_path'].'/CHANGELOG.php' );
+			readfile( $GLOBALS['mosConfig_absolute_path'].'/administrator/CHANGELOG.php' );
 			?>
 		</pre>
 		<?php
