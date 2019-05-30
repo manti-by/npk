@@ -16,7 +16,7 @@ services:
     image: mantiby/apache-php-5-2
     container_name: npk-joomla
     ports:
-      - "8890:80"
+      - 8890:80
     links:
       - npk-mysql
     volumes:

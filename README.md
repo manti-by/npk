@@ -21,11 +21,11 @@ Installation
 
 2. Pull Docker image
 
-        $ docker pull -t mantiby/apache-php-5-2:latest
+        $ docker pull mantiby/apache-php-5-2:latest
         
 3. Run containers
         
-        $ docker-compose up -d
+        $ make start
 
 4. Open browser at [localhost:8890](http://localhost:8890) and enjoy
 
