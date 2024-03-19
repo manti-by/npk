@@ -20,27 +20,26 @@ xml, xmlreader, xmlwriter, xsl, zip, zlib
 
 ### Docker compose example
 
-    ```yaml
-    version: '3.3'
-      services:
-        example-mysql:
-          image: mysql:5.5
-          ports:
-            - 3306:3306
-          volumes:
-            - ./:/docker-entrypoint-initdb.d
-          environment:
-            - MYSQL_DATABASE=example_db
-            - MYSQL_USER=example_user
-            - MYSQL_PASSWORD=pa55word
-            - MYSQL_ROOT_PASSWORD=pa55word
-        example-app:
-          image: mantiby/apache-php-5-2:latest
-          ports:
-            - 8080:80
-          links:
-            - example-mysql
-          volumes:
-            - ./:/usr/local/apache2/htdocs
-    ```
-
+```yaml
+version: '3.3'
+  services:
+    example-mysql:
+      image: mysql:5.5
+      ports:
+        - 3306:3306
+      volumes:
+        - ./:/docker-entrypoint-initdb.d
+      environment:
+        - MYSQL_DATABASE=example_db
+        - MYSQL_USER=example_user
+        - MYSQL_PASSWORD=pa55word
+        - MYSQL_ROOT_PASSWORD=pa55word
+    example-app:
+      image: mantiby/apache-php-5-2:latest
+      ports:
+        - 8080:80
+      links:
+        - example-mysql
+      volumes:
+        - ./:/usr/local/apache2/htdocs
+```
