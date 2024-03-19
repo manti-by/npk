@@ -1,12 +1,7 @@
-start:
-	docker compose -f deploy/docker-compose.yml up -d
-
-stop:
-	docker compose -f deploy/docker-compose.yml stop
-
-destroy:
-	docker compose -f deploy/docker-compose.yml down
+build:
+	docker build -t mantiby/apache-php-5-2:latest .
 
 dump:
-	docker exec -it npk-mysql mysqldump -u npk -ppa55word npk.of.by > deploy/database/database.sql
-	sudo chown manti:manti deploy/database/database.sql
+	docker exec -it npk-mysql mysqldump -u npk -ppa55word npk.of.by > data/database.sql
+	sudo chown manti:manti data/database.sql
+
